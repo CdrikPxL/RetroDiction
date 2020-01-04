@@ -7,8 +7,9 @@ official Thread on Attract-Mode Forums: Attract-Mode Forum Thread: http://forum.
 ## A Brief History
 This is a fork of an earlier layout I made (un-released) called Retro Mania. I changed the name once I found out that another theme with that name existed and could possibly create confusion.  
 
-Retrodiction's dictionary meaning is 
-          *"using present information to make an assertion about the past; an instance of such an assertion"*  
+Retrodiction's dictionary meaning is:  
+
+*"using present information to make an assertion about the past; an instance of such an assertion"*  
 
 I found that fitting for a theme primarily dealing with past (retro) plus the fact that Retrodiction can also be taken as a word play on retro addiction :)  
 
