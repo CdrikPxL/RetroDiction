@@ -1,0 +1,6 @@
+CPU: Z80A @ 4 Mhz
+Memory: 6K ROM, 64K RAM, 48K VRAM
+Screen Resolution Modes:
+320 x 200, 640 x 200, 8 Colours
+Sound: Programmable Sound Generator, 3 Channels
+OS: CP/M

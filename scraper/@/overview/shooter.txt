@@ -1,0 +1,1 @@
+In a Shooter (also called Shoot 'Em Up and FPS), the player shoots large numbers of enemies while dodging obstacles in first person or third person PoV.

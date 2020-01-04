@@ -1,0 +1,1 @@
+MSX2 expands upon MSX by providing more RAM and better graphic capabilities with very enhanced graphic modes

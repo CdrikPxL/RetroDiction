@@ -1,0 +1,1 @@
+NeoGeo CD is a home conversion of NEoGeo MVS arcade system taking benefit of cheaper CD format. CD games generally provided better sound and additional extras
