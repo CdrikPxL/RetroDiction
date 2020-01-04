@@ -1,7 +1,7 @@
 //*****RetroDiction: Platforms Menu*****
 
-//Official Github Repository: 
-//Official Thread on Attract-Mode Forums:  
+//Official Github Repository: https://github.com/randombyt/RetroDiction
+//Official Thread on Attract-Mode Forums: http://forum.attractmode.org/index.php?topic=3199.0   
 
 
 //#####LAYOUT AND BACKGROUND#####
