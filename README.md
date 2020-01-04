@@ -14,16 +14,11 @@ Retrodiction's dictionary meaning is:
 I found that fitting for a theme primarily dealing with past (retro) plus the fact that Retrodiction can also be taken as a word play on retro addiction :)  
 
 ## Aims
-#### Light-weight
-Light on resources and able to run without any problems on any rig.  
-#### Comprehensive
-Includes most of the systems in Arcades, Computers, Consoles and Handhelds. Placekeepers for many systemns which are not currently emulated.  
-#### Adaptability
-Ablity to accomodate more systems and change the look of the layout with minimal effort.  
-#### Compatibility
-Compatible with Windows, Linux and Mac Operating systems and any variation based on these systems.  
-#### Origanization
-Ability to organize a very large amount of systems and roms in an easy to understand format plus arranging things in a way which makes it easy to find and access desired rom with minimal effort.  
+- **Light-weight:** Light on resources and able to run without any problems on any rig.  
+- **Comprehensive:** Includes most of the systems in Arcades, Computers, Consoles and Handhelds. Placekeepers for many systemns which are not currently emulated.  
+- **Adaptability:** Ablity to accomodate more systems and change the look of the layout with minimal effort.  
+- **Compatibility:** Compatible with Windows, Linux and Mac Operating systems and any variation based on these systems.  
+- **Origanization:** Ability to organize a very large amount of systems and roms in an easy to understand format plus arranging things in a way which makes it easy to find and access desired rom with minimal effort.  
 
 ## Credits  
 
@@ -82,7 +77,7 @@ Snap II: https://www.lg.com/us/images/tvs/MD05802269/gallery/large01.jpg
 </details>
 
 #### System Logos  
-All System Logos are from viking's excellent Silver Ring Clear Logos Set. Exceptions are listed seperately below. Original dimensions of logos is 1506x756, they were downsized to  320x161 for this theme.
+All System Logos are from viking's excellent Silver Ring Clear Logos Set. Exceptions are listed seperately below. Original dimensions of logos (set) was 1506x756, they were downsized to 320x161 for this theme.
 
 <details>
   <summary>Expand System Logo Credits</summary>
