@@ -2,7 +2,9 @@
 RetroDiction is a layout (theme) for Attract-Mode front-end.  
 official Thread on Attract-Mode Forums: Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
 
+
 #### _Note: This readme is a work in progress! I'll keep updating it with relevant information and credits. Since the scope of theme is extensive it might take a while!_
+
 
 ## A Brief History
 This is a fork of an earlier layout I made (un-released) called Retro Mania. I changed the name once I found out that another theme with that name existed and could possibly create confusion.  
@@ -13,6 +15,7 @@ Retrodiction's dictionary meaning is:
 
 I found that fitting for a theme primarily dealing with past (retro) plus the fact that Retrodiction can also be taken as a word play on retro addiction :)  
 
+
 ## Aims
 - **Light-weight:** Light on resources and able to run without any problems on any rig.  
 - **Comprehensive:** Includes most of the systems in Arcades, Computers, Consoles and Handhelds. Placekeepers for many systemns which are not currently emulated.  
@@ -20,9 +23,34 @@ I found that fitting for a theme primarily dealing with past (retro) plus the fa
 - **Compatibility:** Compatible with Windows, Linux and Mac Operating systems and any variation based on these systems.  
 - **Origanization:** Ability to organize a very large amount of systems and roms in an easy to understand format plus arranging things in a way which makes it easy to find and access desired rom with minimal effort.  
 
+
+## Installation  
+1. Download the latest version of Attract-Mode from this thread: http://forum.attractmode.org/index.php?topic=2324.0
+2. Download Leap plugin and place it in the appropriate place: https://github.com/keilmillerjr/leap-plugin
+3. Download this layout, unzip it and place in Attract-Mode folder.
+4. Run Attract-Mode and turn on the Leap plugin.
+5. Link the displays to appropriate layout nut file.  
+  - layout.nut: The main/ start display
+  - platforms.nut: Used in platforms i.e. Arcades, Computers, Collections, Consoles and Handhelds
+  - system.nut: Used in system e.g. Atari 2600, Sega Genesis etc  
+  **Note: You can use the attract.am and attract.cfg in /extras either directly or in case of later as a template**  
+  
+
+## Controls
+---  
+
+## Contents of Downloaded Zip
+- **extras:** Includes pre-made attract.cfg, attract.am, default-display.cfg and default-emulator.cfg files. Includes fonts utilized in layout
+and some images which can be used as template.
+- **layouts:** Includes the retrodiction layout with all the images.
+- **scraper:** System overviews are stored in "scraper/@/overviews" when using nested displays. Folder has overviews in simple text files. For the moment I am using Chiculeo's ES theme overviews and Chicuelo-Mix layout overviews but they are place-holders and will chnage in future.
+- **sounds:** Sound files used in theme.
+
 ## Credits  
 
+
 ### Artwork  
+
 
 #### System Flyers  
 All System Flyers are from viking's excellent Nostalgia Background Set (16:9). Exceptions are listed sperately below. Originally the source material was videos in 1920x1080, for this theme single frameshots were utilized after applying some filters on them.   
@@ -296,4 +324,12 @@ Picture: http://www.emuline.org/uploads/gallery/album_1/gallery_1_1_613965.jpg
 **Stratgey**  
 Picture: https://imgur.com/gallery/ClrNy6M  
 
+</details>
+
+
+#### Icons (Genre & Misc)
+All System Logos are from viking's excellent Silver Ring Clear Logos Set. Exceptions are listed seperately below. Original dimensions of logos (set) was 1506x756, they were downsized to 320x161 for this theme.
+
+<details>
+  <summary>Expand Icon Credits</summary>
 </details>
