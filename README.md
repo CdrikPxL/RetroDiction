@@ -7,9 +7,14 @@ Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0
 ### Artwork  
 
 #### System Flyers  
-All System Flyers by "viking" excellent Nostalgia Background Set (16:9), Exceptions listed below:  
+All System Flyers are from viking's excellent Nostalgia Background Set (16:9). Exceptions are listed sperately below. Originally the source material was videos in 1920x1080, for this theme single frameshots were utilized after applying some filters on them.   
+
+<details>
+  <summary>Expand System Flyer Credits</summary>
+
+**Viking's Nostalgia Set (16:9)**  
 Direct Link: https://forums.launchbox-app.com/files/file/219-nostalgia-169-video-set/  
-Originals are videos in 1920x1080, for this theme single frameshots were utilized after applying some filters on them.  
+
 
 ##### Exceptions  
 The background in all cases is from viking.  
@@ -51,15 +56,21 @@ Computer: https://upload.wikimedia.org/wikipedia/commons/1/1a/Tatung-einstein-co
 Snap: http://res.publicdomainfiles.com/pdf_view/52/13525969815546.png  
 Snap II: https://www.lg.com/us/images/tvs/MD05802269/gallery/large01.jpg 
 
+</details>
+
 #### System Logos  
-All System Logos by "viking" excellent Silver Ring Clear Logos Set. exceptions listed below:
-Direct Link: https://forums.launchbox-app.com/topic/33151-silver-ring-clearlogo-set/
-(Original dimensions of logos is 1506x756, they were downsized to  320x161 for this theme)
+All System Logos are from viking's excellent Silver Ring Clear Logos Set. Exceptions are listed seperately below. Original dimensions of logos is 1506x756, they were downsized to  320x161 for this theme.
+
+<details>
+  <summary>Expand System Logo Credits</summary>
+
+**Viking's Clear Logo Silver Ring Set**  
+Direct Link: https://forums.launchbox-app.com/topic/33151-silver-ring-clearlogo-set/  
 
 ##### Exceptions  
 "All" by "mario64"
-Direct Link: https://forums.launchbox-app.com/uploads/monthly_2019_01/1034685067_AllGames.png.34954176fbf86d79985f8b1083748ab4.png
-Thread: https://forums.launchbox-app.com/topic/33151-silver-ring-clearlogo-set/?page=32
+Direct Link: https://forums.launchbox-app.com/uploads/monthly_2019_01/1034685067_AllGames.png.34954176fbf86d79985f8b1083748ab4.png  
+Thread: https://forums.launchbox-app.com/topic/33151-silver-ring-clearlogo-set/?page=32  
 
 **Archives**  
 Safe: http://icons.iconarchive.com/icons/artua/mac/512/Archive-manage-icon.png  
@@ -143,7 +154,7 @@ Logo: https://hackadaycom.files.wordpress.com/2012/11/chip8.jpeg
 Text/ BG: From viking's "Commodore 128"  
 
 **Elektronika BK**  
-Logo: spotUP's Elektronika BK Logo Redraw: https://hyperspin-fe.com/forums/topic/28631-project-main-menu-wheels-minting/?page=2 modified  
+Logo: spotUP's Elektronika BK Logo Redraw (modified): https://hyperspin-fe.com/forums/topic/28631-project-main-menu-wheels-minting/?page=2  
 Direct:  http://i.imgur.com/GivFT0s.png  
 
 **Fighting**  
@@ -267,3 +278,4 @@ Picture: http://www.emuline.org/uploads/gallery/album_1/gallery_1_1_613965.jpg
 **Stratgey**  
 Picture: https://imgur.com/gallery/ClrNy6M  
 
+</details>
