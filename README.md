@@ -1,6 +1,28 @@
 # RetroDiction
 RetroDiction is a layout (theme) for Attract-Mode front-end.  
-Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
+official Thread on Attract-Mode Forums: Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
+
+### Note: This readme is a work in progress! I'll keep updating it with relevant information and credits. Since the scope of theme is extensive it might take a while!
+
+## A Brief History
+This is a fork of an earlier layout I made (un-released) called Retro Mania. I changed the name once I found out that another theme with that name existed and could possibly create confusion.  
+
+Retrodiction's dictionary meaning is 
+  *"using present information to make an assertion about the past; an instance of such an assertion"*  
+
+I found that fitting for a theme primarily dealing with past (retro) plus the fact that Retrodiction can also be taken as a word play on retro addiction :)  
+
+## Aims
+#### Light-weight
+Light on resources and able to run without any problems on any rig.  
+#### Comprehensive
+Includes most of the systems in Arcades, Computers, Consoles and Handhelds. Placekeepers for many systemns which are not currently emulated.  
+#### Adaptability
+Ablity to accomodate more systems and change the look of the layout with minimal effort.  
+#### Compatibility
+Compatible with Windows, Linux and Mac Operating systems and any variation based on these systems.  
+#### Origanization
+Ability to organize a very large amount of systems and roms in an easy to understand format plus arranging things in a way which makes it easy to find and access desired rom with minimal effort.  
 
 ## Credits  
 
