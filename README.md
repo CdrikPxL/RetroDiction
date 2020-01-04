@@ -2,13 +2,13 @@
 RetroDiction is a layout (theme) for Attract-Mode front-end.  
 official Thread on Attract-Mode Forums: Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
 
-### Note: This readme is a work in progress! I'll keep updating it with relevant information and credits. Since the scope of theme is extensive it might take a while!
+#### _Note: This readme is a work in progress! I'll keep updating it with relevant information and credits. Since the scope of theme is extensive it might take a while!_
 
 ## A Brief History
 This is a fork of an earlier layout I made (un-released) called Retro Mania. I changed the name once I found out that another theme with that name existed and could possibly create confusion.  
 
 Retrodiction's dictionary meaning is 
-  *"using present information to make an assertion about the past; an instance of such an assertion"*  
+          *"using present information to make an assertion about the past; an instance of such an assertion"*  
 
 I found that fitting for a theme primarily dealing with past (retro) plus the fact that Retrodiction can also be taken as a word play on retro addiction :)  
 
