@@ -14,7 +14,7 @@ Originals are videos in 1920x1080, for this theme single frameshots were utilize
 ##### Exceptions  
 The background in all cases is from viking.  
 
-**Archives**
+**Archives**  
 Safe: http://icons.iconarchive.com/icons/artua/mac/512/Archive-manage-icon.png  
 
 **Current**  
@@ -51,7 +51,7 @@ Computer: https://upload.wikimedia.org/wikipedia/commons/1/1a/Tatung-einstein-co
 Snap: http://res.publicdomainfiles.com/pdf_view/52/13525969815546.png  
 Snap II: https://www.lg.com/us/images/tvs/MD05802269/gallery/large01.jpg 
 
-####System Logos  
+#### System Logos  
 All System Logos by "viking" excellent Silver Ring Clear Logos Set. exceptions listed below:
 Direct Link: https://forums.launchbox-app.com/topic/33151-silver-ring-clearlogo-set/
 (Original dimensions of logos is 1506x756, they were downsized to  320x161 for this theme)
