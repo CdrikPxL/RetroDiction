@@ -52,7 +52,7 @@ and some images which can be used as template.
 Following Plugins and Modules are utilized in this layout:  
 
 #### Controls Module  
-Controls module is created by liquid8d. It allows us to create custom buttons and labels.   
+Controls module is created by liquid8d. It allows us to create custom buttons and labels.  
 Official Repo: https://github.com/liquid8d/attract-extra/tree/master/modules/objects/controls  
 
 #### Format Time  
