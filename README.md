@@ -53,30 +53,25 @@ Following Plugins and Modules are utilized in this layout:
 
 #### Controls Module  
 Controls module is created by liquid8d. It allows us to create custom buttons and labels.   
-
-https://github.com/liquid8d/attract-extra/tree/master/modules/objects/controls  
+Official Repo: https://github.com/liquid8d/attract-extra/tree/master/modules/objects/controls  
 
 #### Format Time  
 Format Time module is created by Keil Miller. It allows us to display time in a more effective way.  
 
 #### Keyboard Search Module  
 Keyboard Search module is created by liquid8d. This module allows us to search roms through gamepad. 
-
 Official Repo: https://github.com/liquid8d/attract-extra/tree/master/modules/objects/keyboard-search  
 
 #### Leap Plugin  
 Leap plugin is created by Keil Miller. This plugin skips the empty filters, essential in this layout as we are using a set template of filters for all the systems.  
-
 Official Repo: https://github.com/keilmillerjr/leap-plugin  
 
 #### Preserve Art Module  
 Preserve Art module is created by liquid8d. This module helps us in better adjusting the artworkby offering fit and fill options while keeping the aspect ratio intact, it also offers anchoring the artwork to specific side. In this layout "Flyers" artwork utilizes this. There are small modficatiosn made to get desired results.  
-
 Official Repo: https://github.com/liquid8d/attract-extra/tree/master/modules  
 
 #### Shuffle Module  
 Shuffle module is created by Keil Miller. Shuffle module allows us to use slots for better handling of game list. It is used as an alternate to Attract-Mode's default list box. There are small modifications made in the module to support moving between filters.  
-
 Official Repo: https://github.com/keilmillerjr/shuffle-module  
 
 
