@@ -1,6 +1,6 @@
 # RetroDiction
 RetroDiction is a layout (theme) for Attract-Mode front-end.  
-official Thread on Attract-Mode Forums: Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
+Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
 
 
 #### _Note: This readme is a work in progress! I'll keep updating it with relevant information and credits. Since the scope of theme is extensive it might take a while!_
