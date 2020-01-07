@@ -1,5 +1,6 @@
 //*****Retrodiction: Displays Menu*****
 
+//RetroDiction Version 1.0
 //Official Github Repository: https://github.com/randombyt/RetroDiction
 //Official Thread on Attract-Mode Forums: http://forum.attractmode.org/index.php?topic=3199.0 
 
