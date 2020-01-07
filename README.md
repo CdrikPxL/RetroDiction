@@ -1,5 +1,6 @@
 # RetroDiction
 RetroDiction is a layout (theme) for Attract-Mode front-end.  
+
 Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
 
 
@@ -25,24 +26,35 @@ I found that fitting for a theme primarily dealing with past (retro) plus the fa
 
 
 ## Installation  
-1. Download the latest version of Attract-Mode from this thread: http://forum.attractmode.org/index.php?topic=2324.0
-2. Download Leap plugin and place it in the appropriate place: https://github.com/keilmillerjr/leap-plugin
-3. Download this layout, unzip it and place in Attract-Mode folder.
+1. Download and extract the latest version of Attract-Mode from this thread (first Porst): http://forum.attractmode.org/index.php?topic=2324.0
+2. Download Leap plugin and extract it in /plugins: https://github.com/keilmillerjr/leap-plugin
+3. Download this layout, unzip it and place in Attract-Mode folder, overwriting as needed. Overwriting is safe in most cases but take a look at contents just in case.
+
+**Note: The current size of download will be around 1.2 GB**  
+
+### Experienced Attract-Mode User
 4. Run Attract-Mode and turn on the Leap plugin.
 5. Link the displays to appropriate layout nut file.  
     - layout.nut: The main/ start display
     - layout_platforms.nut: Used in platforms i.e. Arcades, Computers, Collections, Consoles and Handhelds
     - layout_system.nut: Used in system e.g. Atari 2600, Sega Game Gear, MAME etc  
     **Note: You can use the attract.am and attract.cfg in /extras either directly or in case of later as a template**  
-  
+
+### New Attract-Mode User  
+4a. Copy attract.cfg and attract.am from /extras to Attract-Mode folder root. This will setup all displays and controls.  
+
+**Note: Some controls are xbox 360 controller based and may require mapping to keyboard or any other device in use**  
+
 
 ## Controls
----  
+To be added!
+
 
 ## Contents of Downloaded Zip
 - **extras:** Includes pre-made attract.cfg, attract.am, default-display.cfg and default-emulator.cfg files. Includes fonts utilized in layout
 and some images which can be used as template.
 - **layouts:** Includes the retrodiction layout with all the images.
+- **romlists:** Includes all main platforms system romlists and collection romlist. Also includes same list in excel .xlsx format and xls format for older office versions.
 - **scraper:** System overviews are stored in "scraper/@/overviews" when using nested displays. Folder has overviews in simple text files. For the moment I am using Chiculeo's ES theme overviews and Chicuelo-Mix layout overviews but they are place-holders and will chnage in future.
 - **sounds:** Sound files used in theme.
 
@@ -79,7 +91,7 @@ Official Repo: https://github.com/keilmillerjr/shuffle-module
 
 
 #### System Flyers  
-All System Flyers are from viking's excellent Nostalgia Background Set (16:9). Exceptions are listed sperately below. Originally the source material was videos in 1920x1080, for this theme single frameshots were utilized after applying some filters on them.   
+All System Flyers are from viking's excellent Nostalgia Background Set (16:9). Exceptions are listed seperately below. Originally the source material was videos in 1920x1080, for this theme single frameshots were utilized after applying some filters on them.   
 
 <details>
   <summary>Expand System Flyer Credits</summary>
@@ -89,7 +101,7 @@ Direct Link: https://forums.launchbox-app.com/files/file/219-nostalgia-169-video
 
 
 ##### Exceptions  
-The background in all cases is from viking.  
+The background in all cases are from viking's original background.  
 
 **Archives**  
 Safe: http://icons.iconarchive.com/icons/artua/mac/512/Archive-manage-icon.png  
@@ -131,7 +143,7 @@ Snap II: https://www.lg.com/us/images/tvs/MD05802269/gallery/large01.jpg
 </details>
 
 #### System Logos  
-All System Logos are from viking's excellent Silver Ring Clear Logos Set. Exceptions are listed seperately below. Original dimensions of logos (set) was 1506x756, they were downsized to 320x161 for this theme.
+All System Logos are from viking's excellent Silver Ring Clear Logos Set. Exceptions are listed seperately below. Original dimensions of logos was 1506x756, they were downsized to 320x161 for this theme.
 
 <details>
   <summary>Expand System Logo Credits</summary>
@@ -354,8 +366,9 @@ Picture: https://imgur.com/gallery/ClrNy6M
 
 
 #### Icons (Genre & Misc)
-All System Logos are from viking's excellent Silver Ring Clear Logos Set. Exceptions are listed seperately below. Original dimensions of logos (set) was 1506x756, they were downsized to 320x161 for this theme.
+All icons are from Game-icons.net, excepetions are listed seperately.
 
 <details>
   <summary>Expand Icon Credits</summary>
+To be added!
 </details>
