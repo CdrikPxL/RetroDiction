@@ -1,5 +1,5 @@
 # RetroDiction
-RetroDiction is a layout (theme) for Attract-Mode front-end. This theme is made for proper HD (1920x1080) 16:9 resolution though since every measurement is in plain numbers can be modified to support other resolutions.   
+RetroDiction is a layout (theme) for Attract-Mode front-end. This theme only supports 1920x1080 (16:9) resolution though since every measurement is in plain numbers can be modified to support other resolutions.   
 
 Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
 
