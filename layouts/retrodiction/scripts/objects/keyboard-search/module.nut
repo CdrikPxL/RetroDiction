@@ -25,7 +25,7 @@ class KeyboardSearch {
         retain = false,
         key_delay = 100,
         repeat_key_delay = 250,
-        bg = ::fe.module_dir + "/images/pixel.png",
+        bg = :: "/images/pixel.png",
         bg_red = 30,
         bg_green = 30,
         bg_blue = 30,
@@ -36,7 +36,7 @@ class KeyboardSearch {
             font = "Arial"
         },
         keys = {
-            folder = ::fe.module_dir + "/images",
+            folder = "/images",
             font = "Arial",
             charsize = 46,
             pos = [ 0.1, 0.4, 0.8, 0.5 ],

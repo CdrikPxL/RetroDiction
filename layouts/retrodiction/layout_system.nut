@@ -27,7 +27,7 @@ background.mipmap = true;
 fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
 fe.do_nut("scripts/preserve-art.nut") //load preserve-art module
 fe.do_nut("scripts/objects/controls/module.nut") //load controls module
-fe.do_nut("scripts/sobjects/keyboard-search/module.nut") //load keyboard search module
+fe.do_nut("scripts/objects/keyboard-search/module.nut") //load keyboard search module
 fe.do_nut("scripts/formatTime.nut") //load format time module
 
 
