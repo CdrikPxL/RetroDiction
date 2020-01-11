@@ -1,5 +1,5 @@
 # RetroDiction
-RetroDiction is a layout (theme) for Attract-Mode front-end.  
+RetroDiction is a layout (theme) for Attract-Mode front-end. This theme only supports 1920x1080 (16:9) resolution though since every measurement is in plain numbers can be modified to support other resolutions.   
 
 Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
 
@@ -24,7 +24,50 @@ I found that fitting for a theme primarily dealing with past (retro) plus the fa
 - **Compatibility:** Compatible with Windows, Linux and Mac Operating systems and any variation based on these systems.  
 - **Origanization:** Ability to organize a very large amount of systems and roms in an easy to understand format plus arranging things in a way which makes it easy to find and access desired rom with minimal effort.  
 
+## Showcase  
+Snaps and Videos showcasing different aspects of layout. Please click to enlarge.  
 
+### Displays Menu
+![Displays Menu](https://i.imgur.com/760RxqA.jpg)  
+
+This display is the starting display and lists all platforms and collections menu. At the top of heirarchy, this is known as Displays Menu in Attract-Mode. Platforms include Arcades, Computers, Consoles and Handhelds. There is no romnlist for this display, we add the enteries directly in attrcat.cfg for the items we want to see listed here.
+
+### Platform Menu
+![Platform Menu](https://i.imgur.com/a5Nt7l5.jpg)  
+
+This display lists all the systems within a platform e.g. all systems within the Arcades platform. This can be thought of as a sub-folder to Displays Menu. It is essentially a romlist which lists systems instead of roms. Platforms and Collections have their own romlist enteries listing their systems/ items.  
+
+### System Menu
+![System Menu](https://i.imgur.com/9PhzuOd.jpg)  
+This display lists all the items within the system romlist. If Displays Menu/ platforms are not utilized this will be the default display in Attract-Mode. In heirarchy this can be treated as sub-folder of Platforms Menu or sub sub-folder of Displays Menu.  
+
+### Game Launcher
+![Game Launcher](https://i.imgur.com/bOnSKNy.jpg)  
+
+Game launcher is launched when a game is selected. This shows rom specific information.  
+
+### Options
+![Options](https://i.imgur.com/hpTWdyZ.jpg)  
+
+These options are custom created and differ from Attract-Mode's default options.  These allow to access functions already built into Attract-Mode so could be considered a list of shortcuts to said functions.
+
+### Collections
+![Collections](https://i.imgur.com/pZQIPRw.jpg)  
+
+Collections is listed in Displays Menu with other platforms but its a selection of custom folders like Series, Genres etc. Its supposed to be used with the Unified-List fo all systems.  
+
+### YouTube Links
+Youtube videos showcasing soem aspects of layout. There will be small differences to current version.  
+
+#### Video Showcasing Arcades
+[![Video Showcasing Arcades](http://img.youtube.com/vi/lIxxbKcdZHY/0.jpg)](http://www.youtube.com/watch?v=lIxxbKcdZHY)  
+
+#### Video Showcasing Consoles
+[![Video Showcasing Consoles](http://img.youtube.com/vi/uX7qQCiw7Fk/0.jpg)](http://www.youtube.com/watch?v=uX7qQCiw7Fk)  
+
+#### Video Showcasing Game Launcher and Custom Options
+[![Video Showcasing Game Launcher and Custom Options](http://img.youtube.com/vi/9IDcp_46agM/0.jpg)](http://www.youtube.com/watch?v=9IDcp_46agM)  
+ 
 ## Installation  
 1. Download and extract the latest version of Attract-Mode from this thread (first Porst): http://forum.attractmode.org/index.php?topic=2324.0
 2. Download Leap plugin and extract it in /plugins: https://github.com/keilmillerjr/leap-plugin
@@ -44,6 +87,11 @@ I found that fitting for a theme primarily dealing with past (retro) plus the fa
 4a. Copy attract.cfg and attract.am from /extras to Attract-Mode folder root. This will setup all displays and controls.  
 
 **Note: Some controls are xbox 360 controller based and may require mapping to keyboard or any other device in use**  
+
+### Important Wiki Entries
+Please read the following wiki entries for a better understanding of how the layout functions.  
+
+1. Attract-Mode Romlists: https://github.com/randombyt/RetroDiction/wiki/Attract-Mode-Romlists  
 
 
 ## Controls
