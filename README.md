@@ -88,6 +88,11 @@ Youtube videos showcasing soem aspects of layout. There will be small difference
 
 **Note: Some controls are xbox 360 controller based and may require mapping to keyboard or any other device in use**  
 
+### Important Wiki Entries
+Please read the following wiki entries for a better understanding of how the layout functions.  
+
+1. Attract-Mode Romlists: https://github.com/randombyt/RetroDiction/wiki/Attract-Mode-Romlists  
+
 
 ## Controls
 To be added!
