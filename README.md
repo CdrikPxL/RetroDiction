@@ -112,11 +112,11 @@ and some images which can be used as template.
 
 I am much grateful to viking for his excellent nostalgia platform set and clear silver ring logo set. Viking's artwork was not only aesthetically very pleasing but was very thorough as it included a very large number fo systems. much thanks to him for sharing his work with emulation community!  
 
-I am also grateful to helpful folks in Attrcat-Mode forums and discord channel. Firstly thanks to andrews for creating and sharing Attract-Mode. Andrew also graciousoly added soem stuff in Attract-mode which I requested (additional romlist fields).  
+I am also grateful to helpful folks in Attrcat-Mode forums and discord channel. Firstly thanks to Andrews for creating and sharing Attract-Mode. Andrew also graciousoly added some stuff in Attract-mode which I requested (additional romlist fields).  
 
 A huge thanks to Keil Miller, my go-to person when I faced any problems in coding. Keil's shuffle module and leap plugin made it possible for me to design this layout the way I wanted. Keil also graciously expanded leap and shuffle to accomodote some requests I made.  
 
-I am also grrateful to liquid8, his modules and plugins were very helpful and he guided me a lot in understanding and tailoring those to my needs.  
+I am also grateful to liquid8, his modules and plugins were very helpful. He was very helpful in guiding me in understanding and tailoring those to my needs.  
 
 I am also grateful to other mebers of Attract-Mode community like Oomek, Jedione, progets, hermine.potter, liquid8d, zpaolo11x, kent79, calle81 & qqplayer for their help. I learned a lot from their discussions and their layouts.  
 
