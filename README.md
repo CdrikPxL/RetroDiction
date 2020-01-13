@@ -1,7 +1,9 @@
 # RetroDiction
-RetroDiction is a layout (theme) for Attract-Mode front-end. This theme only supports 1920x1080 (16:9) resolution though since every measurement is in plain numbers can be modified to support other resolutions.   
+RetroDiction is a layout (theme) for Attract-Mode front-end. This theme only supports 1920x1080 (16:9) resolution at the moment but since every measurement is in plain numbers can be modified to support other resolutions.   
 
 Attract-Mode Forum Thread: http://forum.attractmode.org/index.php?topic=3199.0  
+
+I am much grateful to viking for allowing me to use his excellent Nostalgia platform set and Silver Ring Logo set. His work is of the highest quality and without that it would have taken me ages to find and fine-tune each system flyer and logo.  
 
 
 #### _Note: This readme is a work in progress! I'll keep updating it with relevant information and credits. Since the scope of theme is extensive it might take a while!_
@@ -107,6 +109,17 @@ and some images which can be used as template.
 - **sounds:** Sound files used in theme.
 
 ## Credits  
+
+I am much grateful to viking for his excellent nostalgia platform set and clear silver ring logo set. Viking's artwork was not only aesthetically very pleasing but was very thorough as it included a very large number fo systems. much thanks to him for sharing his work with emulation community!  
+
+I am also grateful to helpful folks in Attrcat-Mode forums and discord channel. Firstly thanks to andrews for creating and sharing Attract-Mode. Andrew also graciousoly added soem stuff in Attract-mode which I requested (additional romlist fields).  
+
+A huge thanks to Keil Miller, my go-to person when I faced any problems in coding. Keil's shuffle module and leap plugin made it possible for me to design this layout the way I wanted. Keil also graciously expanded leap and shuffle to accomodote some requests I made.  
+
+I am also grrateful to liquid8, his modules and plugins were very helpful and he guided me a lot in understanding and tailoring those to my needs.  
+
+I am also grateful to other mebers of Attract-Mode community like Oomek, Jedione, progets, hermine.potter, liquid8d, zpaolo11x, kent79, calle81 & qqplayer for their help. I learned a lot from their discussions and their layouts.  
+
 
 ### Plugins and Modules  
 Following Plugins and Modules are utilized in this layout:  
