@@ -11,8 +11,9 @@
 fe.layout.width=1920;
 fe.layout.height=1080;
 
-//Load Modules
+//Load Modules & Plug-ins
 fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
+fe.do_nut("scripts/leap/plugin.nut") //load leap plugin
 
 //Surface & Background
 local background = fe.add_image("images/retromode_bg.png", 0,0,0,0);

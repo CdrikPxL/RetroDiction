@@ -23,8 +23,9 @@ coverlay_background.alpha = 255;
 local background = fe.add_image("images/retromode_bg.png", 0,0,0,0);
 background.mipmap = true;
 
-//Modules
+//Load Modules & Plug-ins
 fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
+fe.do_nut("scripts/leap/plugin.nut") //load leap plugin
 fe.do_nut("scripts/preserve-art.nut") //load preserve-art module
 fe.do_nut("scripts/objects/controls/module.nut") //load controls module
 fe.do_nut("scripts/objects/keyboard-search/module.nut") //load keyboard search module

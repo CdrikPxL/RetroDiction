@@ -15,9 +15,9 @@ fe.layout.height=1080;
 local background = fe.add_image("images/retromode_bg.png", 0,0,0,0);
 background.mipmap = true;
 
-//Load Modules
-//Shuffle Module
+//Load Modules & Plug-ins
 fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
+fe.do_nut("scripts/leap/plugin.nut") //load leap plugin
 
 
 //#####SYSTEMS: FLYERS, LOGOS & TITLE#####
