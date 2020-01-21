@@ -72,17 +72,15 @@ Youtube videos showcasing soem aspects of layout. There will be small difference
  
 ## Installation  
 1. Download and extract the latest version of Attract-Mode from this thread (first Porst): http://forum.attractmode.org/index.php?topic=2324.0
-2. Download Leap plugin and extract it in /plugins: https://github.com/keilmillerjr/leap-plugin
-3. Download this layout, unzip it and place in Attract-Mode folder, overwriting as needed. Overwriting is safe in most cases but take a look at contents just in case.
+2. Download this layout, unzip it and place in Attract-Mode folder, overwriting as needed. Overwriting is safe in most cases but take a look at contents just in case.
 
 **Note: The current size of download will be around 1.2 GB**  
 
 ### Experienced Attract-Mode User
-4. Run Attract-Mode and turn on the Leap plugin.
-5. Link the displays to appropriate layout nut file.  
-    - layout.nut: The main/ start display
-    - layout_platforms.nut: Used in platforms i.e. Arcades, Computers, Collections, Consoles and Handhelds
-    - layout_system.nut: Used in system e.g. Atari 2600, Sega Game Gear, MAME etc  
+3. Link the displays to appropriate layout nut file.  
+    - layout.nut: The main/ start display aka Displays Menu
+    - layout_platforms.nut: Used in platform systems i.e. Arcades, Computers, Collections, Consoles and Handhelds
+    - layout_system.nut: System roms e.g. Atari 2600, Sega Game Gear, MAME etc  
     **Note: You can use the attract.am and attract.cfg in /extras either directly or in case of later as a template**  
 
 ### New Attract-Mode User  
