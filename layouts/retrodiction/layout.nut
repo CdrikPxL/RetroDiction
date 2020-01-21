@@ -16,8 +16,8 @@ local background = fe.add_image("images/retromode_bg.png", 0,0,0,0);
 background.mipmap = true;
 
 //Load Modules & Plug-ins
-fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
 fe.do_nut("scripts/leap/plugin.nut") //load leap plugin
+fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
 
 
 //#####SYSTEMS: FLYERS, LOGOS & TITLE#####
