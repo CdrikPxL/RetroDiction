@@ -164,11 +164,11 @@ function tick_up_fast(ttime)
 	{
 		if ((fe.overlay.is_up) == true)
 			{
-				(fe.get_input_state("Joy0 PovYpos") || fe.get_input_state("Joy0 PovXneg")) ? image_up.visible = false : image_up.visible = false;
+				(fe.get_input_state("Joy0 PovYpos") || fe.get_input_state("Joy0 PovXneg") || fe.get_input_state("PageUp") || fe.get_input_state("Home")) ? image_up.visible = false : image_up.visible = false;
 			}	
 		else if ((fe.overlay.is_up) == false)
 			{
-				(fe.get_input_state("Joy0 PovYpos") || fe.get_input_state("Joy0 PovXneg")) ? image_up.visible = true : image_up.visible = false;
+				(fe.get_input_state("Joy0 PovYpos") || fe.get_input_state("Joy0 PovXneg") || fe.get_input_state("PageUp") || fe.get_input_state("Home"))? image_up.visible = true : image_up.visible = false;
 			}
 	}
 
@@ -176,11 +176,11 @@ function tick_down_fast(ttime)
 	{
 		if ((fe.overlay.is_up) == true)
 			{
-				(fe.get_input_state("Joy0 PovYneg") || fe.get_input_state("Joy0 PovXpos")) ? image_down.visible = false : image_down.visible = false;
+				(fe.get_input_state("Joy0 PovYneg") || fe.get_input_state("Joy0 PovXpos") || fe.get_input_state("PageDown") || fe.get_input_state("End"))  ? image_down.visible = false : image_down.visible = false;
 			}	
 		else if ((fe.overlay.is_up) == false)
 			{
-				(fe.get_input_state("Joy0 PovYneg") || fe.get_input_state("Joy0 PovXpos")) ? image_down.visible = true : image_down.visible = false;
+				(fe.get_input_state("Joy0 PovYneg") || fe.get_input_state("Joy0 PovXpos") || fe.get_input_state("PageDown") || fe.get_input_state("End")) ? image_down.visible = true : image_down.visible = false;
 			}
 	}
 

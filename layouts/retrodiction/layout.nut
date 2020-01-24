@@ -252,12 +252,46 @@ fe.add_ticks_callback( "tick_plat_sumtotal" );
 //Function to Display/ Hide Info
 function tick_plat_info(ttime)
 	{
-		(fe.get_input_state("Joy0 Button2")) ? plat_info.visible = true : plat_info.visible = false;
-		(fe.get_input_state("Joy0 Button2")) ? plat_oview.visible = true : plat_oview.visible = false;
-		(fe.get_input_state("Joy0 Button2")) ? plat_sumtotal.visible = true : plat_sumtotal.visible = false;
+		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? plat_info.visible = true : plat_info.visible = false;
+		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? plat_oview.visible = true : plat_oview.visible = false;
+		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? plat_sumtotal.visible = true : plat_sumtotal.visible = false;
 	}
 
 fe.add_ticks_callback( "tick_plat_info" );
+
+//Ignore Button Presses
+function on_signal( sig )
+{
+	switch ( sig )	
+		{
+			case "left":
+			fe.signal( "" );
+			return true;
+
+			case "right":
+			fe.signal( "" );
+			return true;
+
+			case "prev_letter":
+			fe.signal( "" );
+			return true;
+
+			case "next_letter":
+			fe.signal( "" );
+			return true;
+
+			case "prev_page":
+			fe.signal( "" );
+			return true;
+
+			case "next_page":
+			fe.signal( "" );
+			return true;	
+		}
+	return false;
+}
+fe.add_signal_handler(this, "on_signal");
+
 
 //#####Custom Overlay Menu#####
 

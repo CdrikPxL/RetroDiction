@@ -15,7 +15,6 @@ fe.layout.height=1080;
 fe.do_nut("scripts/leap/plugin.nut") //load leap plugin
 fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
 
-
 //Surface & Background
 local background = fe.add_image("images/retromode_bg.png", 0,0,0,0);
 background.mipmap = true;
@@ -100,11 +99,11 @@ function tick_up_fast(ttime)
 	{
 		if ((fe.overlay.is_up) == true)
 			{
-				(fe.get_input_state("Joy0 PovYpos") || fe.get_input_state("Joy0 PovXneg")) ? image_up.visible = false : image_up.visible = false;
+				(fe.get_input_state("Joy0 PovYpos") || fe.get_input_state("Joy0 PovXneg") || fe.get_input_state("PageUp") || fe.get_input_state("Home")) ? image_up.visible = false : image_up.visible = false;
 			}	
 		else if ((fe.overlay.is_up) == false)
 			{
-				(fe.get_input_state("Joy0 PovYpos") || fe.get_input_state("Joy0 PovXneg")) ? image_up.visible = true : image_up.visible = false;
+				(fe.get_input_state("Joy0 PovYpos") || fe.get_input_state("Joy0 PovXneg") || fe.get_input_state("PageUp") || fe.get_input_state("Home"))? image_up.visible = true : image_up.visible = false;
 			}
 	}
 
@@ -112,11 +111,11 @@ function tick_down_fast(ttime)
 	{
 		if ((fe.overlay.is_up) == true)
 			{
-				(fe.get_input_state("Joy0 PovYneg") || fe.get_input_state("Joy0 PovXpos")) ? image_down.visible = false : image_down.visible = false;
+				(fe.get_input_state("Joy0 PovYneg") || fe.get_input_state("Joy0 PovXpos") || fe.get_input_state("PageDown") || fe.get_input_state("End"))  ? image_down.visible = false : image_down.visible = false;
 			}	
 		else if ((fe.overlay.is_up) == false)
 			{
-				(fe.get_input_state("Joy0 PovYneg") || fe.get_input_state("Joy0 PovXpos")) ? image_down.visible = true : image_down.visible = false;
+				(fe.get_input_state("Joy0 PovYneg") || fe.get_input_state("Joy0 PovXpos") || fe.get_input_state("PageDown") || fe.get_input_state("End")) ? image_down.visible = true : image_down.visible = false;
 			}
 	}
 
@@ -396,12 +395,12 @@ fe.add_ticks_callback( "tick_sys_info" );
 
 function tick_sys_info(ttime)
 	{
-		(fe.get_input_state("Joy0 Button2")) ? sys_info.visible = true : sys_info.visible = false;
-		(fe.get_input_state("Joy0 Button2")) ? sys_oview.visible = true : sys_oview.visible = false;
-		(fe.get_input_state("Joy0 Button2")) ? sys_release.visible = true : sys_release.visible = false;
-		(fe.get_input_state("Joy0 Button2")) ? sys_sumtotal.visible = true : sys_sumtotal.visible = false;
-		(fe.get_input_state("Joy0 Button2")) ? sys_tech.visible = true : sys_tech.visible = false;
-		(fe.get_input_state("Joy0 Button2")) ? sys_gen.visible = true : sys_gen.visible = false;
+		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_info.visible = true : sys_info.visible = false;
+		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_oview.visible = true : sys_oview.visible = false;
+		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_release.visible = true : sys_release.visible = false;
+		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_sumtotal.visible = true : sys_sumtotal.visible = false;
+		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_tech.visible = true : sys_tech.visible = false;
+		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_gen.visible = true : sys_gen.visible = false;
 	}
 
 //Temporary Fix for Screen Flickering in FullScreen Mode
