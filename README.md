@@ -114,8 +114,8 @@ Please read the following wiki entries for a better understanding of how the lay
 | --- | --- | --- |
 | Move Up | Left Analog Up | Up |
 | Move Down | Left Analog Down | Down |
-| Previous Display | Left Analog Left | Left |
-| Next Display | Left Analog Right | Right |
+| Previous Display | Left Analog Left (disabled) | Left (disabled) |
+| Next Display | Left Analog Right (disabled) | Right (disabled) |
 | Previous Letter | D-pad Left | Home |
 | Next Letter | D-pad Right | End |
 | Previous Page | D-pad Up | Page Up |
