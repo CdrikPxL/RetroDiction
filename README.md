@@ -93,10 +93,63 @@ Please read the following wiki entries for a better understanding of how the lay
 
 1. Attract-Mode Romlists: https://github.com/randombyt/RetroDiction/wiki/Attract-Mode-Romlists  
 
-
 ## Controls
-To be added!
+### Displays Menu
+| Description | XBox 360 Controller | Keyboard | 
+| --- | --- | --- |
+| Move Up | Left Analog Up | Up |
+| Move Down | Left Analog Down | Down |
+| Previous Display | Left Analog Left (disabled) | Left (disabled) |
+| Next Display | Left Analog Right (disabled) | Right (disabled) |
+| Previous Letter | D-pad Left (disabled) | Home (disabled) |
+| Next Letter | D-pad Right (disabled) | End (disabled) |
+| Previous Page | D-pad Up (disabled) | Page Up (disabled) |
+| Next Page | D-pad Down (disabled) | Page Down (disabled) |
+| Select | A | Enter |
+| Back (exit) | B | Escape |
+| Info Panel | X (hold) | X (hold) |
 
+### Platform Menu
+| Description | XBox 360 Controller | Keyboard | 
+| --- | --- | --- |
+| Move Up | Left Analog Up | Up |
+| Move Down | Left Analog Down | Down |
+| Previous Display | Left Analog Left | Left |
+| Next Display | Left Analog Right | Right |
+| Previous Letter | D-pad Left | Home |
+| Next Letter | D-pad Right | End |
+| Previous Page | D-pad Up | Page Up |
+| Next Page | D-pad Down | Page Down |
+| Select | A | Enter |
+| Back | B | Escape |
+| Info Panel | X (hold) | X (hold) |
+
+### System Menu
+| Description | XBox 360 Controller | Keyboard | 
+| --- | --- | --- |
+| Move Up | Left Analog Up | Up |
+| Move Down | Left Analog Down | Down |
+| Previous Display | Left Analog Left | Left |
+| Next Display | Left Analog Right | Right |
+| Previous Letter | D-pad Left | Home |
+| Next Letter | D-pad Right | End |
+| Previous Page | D-pad Up | Page Up |
+| Next Page | D-pad Down | Page Down |
+| Select | A | Enter |
+| Back | B | Escape |
+
+### Custom Option Menu (System Menu)
+| Description | XBox 360 Controller | Keyboard | 
+| --- | --- | --- |
+| Options Menu | X | X |
+| Select | A | Enter |
+| Exit Selection | B | Escape |
+| Exit Options Menu | B (after exiting Selection)| Escape (after Exiting Selection) |
+
+**Notes**  
+* (disabled) means that function has been disabled i,e, key press is ignored.  
+* (exit) means that pressing the button on displays menu will show the exit prompt dialogue.
+* (hold) means that function/ item will be displayed until the key is held down.  
 
 ## Contents of Downloaded Zip
 - **extras:** Includes pre-made attract.cfg, attract.am, default-display.cfg and default-emulator.cfg files. Includes fonts utilized in layout
