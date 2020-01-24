@@ -99,8 +99,8 @@ Please read the following wiki entries for a better understanding of how the lay
 | --- | --- | --- |
 | Move Up | Left Analog Up | Up |
 | Move Down | Left Analog Down | Down |
-| Previous Display | Left Analog Left (disabled) | Left (disabled) |
-| Next Display | Left Analog Right (disabled) | Right (disabled) |
+| Previous Display (filter, loop) | Left Analog Left (disabled) | Left (disabled) |
+| Next Display (filter, loop) | Left Analog Right (disabled) | Right (disabled) |
 | Previous Letter | D-pad Left (disabled) | Home (disabled) |
 | Next Letter | D-pad Right (disabled) | End (disabled) |
 | Previous Page | D-pad Up (disabled) | Page Up (disabled) |
@@ -114,8 +114,8 @@ Please read the following wiki entries for a better understanding of how the lay
 | --- | --- | --- |
 | Move Up | Left Analog Up | Up |
 | Move Down | Left Analog Down | Down |
-| Previous Display | Left Analog Left (disabled) | Left (disabled) |
-| Next Display | Left Analog Right (disabled) | Right (disabled) |
+| Previous Display (filter, loop) | Left Analog Left (disabled) | Left (disabled) |
+| Next Display (filter, loop) | Left Analog Right (disabled) | Right (disabled) |
 | Previous Letter | D-pad Left | Home |
 | Next Letter | D-pad Right | End |
 | Previous Page | D-pad Up | Page Up |
@@ -129,8 +129,8 @@ Please read the following wiki entries for a better understanding of how the lay
 | --- | --- | --- |
 | Move Up | Left Analog Up | Up |
 | Move Down | Left Analog Down | Down |
-| Previous Display | Left Analog Left | Left |
-| Next Display | Left Analog Right | Right |
+| Previous Display (filter, loop) | Left Analog Left | Left |
+| Next Display (filter, loop) | Left Analog Right | Right |
 | Previous Letter | D-pad Left | Home |
 | Next Letter | D-pad Right | End |
 | Previous Page | D-pad Up | Page Up |
@@ -148,8 +148,10 @@ Please read the following wiki entries for a better understanding of how the lay
 
 **Notes**  
 * (disabled) means that function has been disabled i,e, key press is ignored.  
-* (exit) means that pressing the button on displays menu will show the exit prompt dialogue.
+* (exit) means that pressing the button on displays menu will show the exit prompt dialogue.  
+* (filter) means that previous/ next displays are filter specific display i.e. display is based on filter.  
 * (hold) means that function/ item will be displayed until the key is held down.  
+* (loop) means that function is in a loop i.e. for items A, B and C it moves A>B>C>A or C<B<A<C.   
 
 ## Contents of Downloaded Zip
 - **extras:** Includes pre-made attract.cfg, attract.am, default-display.cfg and default-emulator.cfg files. Includes fonts utilized in layout
