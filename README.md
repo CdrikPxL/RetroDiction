@@ -51,12 +51,12 @@ Game launcher is launched when a game is selected. This shows rom specific infor
 ### Options
 ![Options](https://i.imgur.com/hpTWdyZ.jpg)  
 
-These options are custom created and differ from Attract-Mode's default options.  These allow to access functions already built into Attract-Mode so could be considered a list of shortcuts to said functions.
+These options are custom created and differ from Attract-Mode's default options. These allow to access functions already built into Attract-Mode so could be considered a list of shortcuts to said functions.
 
 ### Collections
 ![Collections](https://i.imgur.com/pZQIPRw.jpg)  
 
-Collections is listed in Displays Menu with other platforms but its a selection of custom folders like Series, Genres etc. Its supposed to be used with the Unified-List fo all systems.  
+Collections is listed in Displays Menu with other platforms but its a selection of custom folders like Series, Genres etc. Its supposed to be used with the Unified-List of all systems.  
 
 ### YouTube Links
 Youtube videos showcasing soem aspects of layout. There will be small differences to current version.  
@@ -84,7 +84,7 @@ Youtube videos showcasing soem aspects of layout. There will be small difference
     **Note: You can use the attract.am and attract.cfg in /extras either directly or in case of later as a template**  
 
 ### New Attract-Mode User  
-4a. Copy attract.cfg and attract.am from /extras to Attract-Mode folder root. This will setup all displays and controls.  
+3. Copy attract.cfg and attract.am from /extras to Attract-Mode folder root. This will setup all displays and controls.  
 
 **Note: Some controls are xbox 360 controller based and may require mapping to keyboard or any other device in use**  
 
@@ -93,10 +93,65 @@ Please read the following wiki entries for a better understanding of how the lay
 
 1. Attract-Mode Romlists: https://github.com/randombyt/RetroDiction/wiki/Attract-Mode-Romlists  
 
-
 ## Controls
-To be added!
+### Displays Menu
+| Description | XBox 360 Controller | Keyboard | 
+| --- | --- | --- |
+| Move Up | Left Analog Up | Up |
+| Move Down | Left Analog Down | Down |
+| Previous Display (filter, loop) | Left Analog Left (disabled) | Left (disabled) |
+| Next Display (filter, loop) | Left Analog Right (disabled) | Right (disabled) |
+| Previous Letter | D-pad Left (disabled) | Home (disabled) |
+| Next Letter | D-pad Right (disabled) | End (disabled) |
+| Previous Page | D-pad Up (disabled) | Page Up (disabled) |
+| Next Page | D-pad Down (disabled) | Page Down (disabled) |
+| Select | A | Enter |
+| Back (exit) | B | Escape |
+| Info Panel | X (hold) | X (hold) |
 
+### Platform Menu
+| Description | XBox 360 Controller | Keyboard | 
+| --- | --- | --- |
+| Move Up | Left Analog Up | Up |
+| Move Down | Left Analog Down | Down |
+| Previous Display (filter, loop) | Left Analog Left (disabled) | Left (disabled) |
+| Next Display (filter, loop) | Left Analog Right (disabled) | Right (disabled) |
+| Previous Letter | D-pad Left | Home |
+| Next Letter | D-pad Right | End |
+| Previous Page | D-pad Up | Page Up |
+| Next Page | D-pad Down | Page Down |
+| Select | A | Enter |
+| Back | B | Escape |
+| Info Panel | X (hold) | X (hold) |
+
+### System Menu
+| Description | XBox 360 Controller | Keyboard | 
+| --- | --- | --- |
+| Move Up | Left Analog Up | Up |
+| Move Down | Left Analog Down | Down |
+| Previous Display (filter, loop) | Left Analog Left | Left |
+| Next Display (filter, loop) | Left Analog Right | Right |
+| Previous Letter | D-pad Left | Home |
+| Next Letter | D-pad Right | End |
+| Previous Page | D-pad Up | Page Up |
+| Next Page | D-pad Down | Page Down |
+| Select | A | Enter |
+| Back | B | Escape |
+
+### Custom Option Menu (System Menu)
+| Description | XBox 360 Controller | Keyboard | 
+| --- | --- | --- |
+| Options Menu | X | X |
+| Select | A | Enter |
+| Exit Selection | B | Escape |
+| Exit Options Menu | B (after exiting Selection)| Escape (after Exiting Selection) |
+
+**Notes**  
+* (disabled) means that function has been disabled i,e, key press is ignored.  
+* (exit) means that pressing the button on displays menu will show the exit prompt dialogue.  
+* (filter) means that previous/ next displays are filter specific display i.e. display is based on filter.  
+* (hold) means that function/ item will be displayed until the key is held down.  
+* (loop) means that function is in a loop i.e. for items A, B and C it moves A>B>C>A or C<B<A<C.   
 
 ## Contents of Downloaded Zip
 - **extras:** Includes pre-made attract.cfg, attract.am, default-display.cfg and default-emulator.cfg files. Includes fonts utilized in layout
@@ -152,13 +207,12 @@ Official Repo: https://github.com/keilmillerjr/shuffle-module
 #### System Flyers  
 All System Flyers are from viking's excellent Nostalgia Background Set (16:9). Exceptions are listed seperately below. Originally the source material was videos in 1920x1080, for this theme single frameshots were utilized after applying some filters on them.   
 
-<details>
-  <summary>Expand System Flyer Credits</summary>
-
 **Viking's Nostalgia Set (16:9)**  
 Direct Link: https://forums.launchbox-app.com/files/file/219-nostalgia-169-video-set/  
 
-
+<details>
+  <summary>Expand System Flyer Exceptions</summary>
+ 
 ##### Exceptions  
 The background in all cases are from viking's original background.  
 
@@ -204,11 +258,11 @@ Snap II: https://www.lg.com/us/images/tvs/MD05802269/gallery/large01.jpg
 #### System Logos  
 All System Logos are from viking's excellent Silver Ring Clear Logos Set. Exceptions are listed seperately below. Original dimensions of logos was 1506x756, they were downsized to 320x161 for this theme.
 
-<details>
-  <summary>Expand System Logo Credits</summary>
-
 **Viking's Clear Logo Silver Ring Set**  
 Direct Link: https://forums.launchbox-app.com/topic/33151-silver-ring-clearlogo-set/  
+
+<details>
+  <summary>Expand System Logo Exceptions</summary>
 
 ##### Exceptions  
 "All" by "mario64"
