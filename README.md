@@ -156,7 +156,7 @@ Please read the following wiki entries for a better understanding of how the lay
 
 
 ## Display Hierarchy
-![Display Hierarchy Flow Chart](https://i.imgur.com/CKbKb9g.png)
+![Display Hierarchy Flow Chart](https://i.imgur.com/egPOUpa.png)
 
 
 ## Contents of Downloaded Zip
