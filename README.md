@@ -93,6 +93,7 @@ Please read the following wiki entries for a better understanding of how the lay
 
 1. Attract-Mode Romlists: https://github.com/randombyt/RetroDiction/wiki/Attract-Mode-Romlists  
 
+
 ## Controls
 ### Displays Menu
 | Description | XBox 360 Controller | Keyboard | 
@@ -153,6 +154,11 @@ Please read the following wiki entries for a better understanding of how the lay
 * (hold) means that function/ item will be displayed until the key is held down.  
 * (loop) means that function is in a loop i.e. for items A, B and C it moves A>B>C>A or C<B<A<C.   
 
+
+## Display Hierarchy
+![Display Hierarchy Flow Chart](https://i.imgur.com/CKbKb9g.png)
+
+
 ## Contents of Downloaded Zip
 - **extras:** Includes pre-made attract.cfg, attract.am, default-display.cfg and default-emulator.cfg files. Includes fonts utilized in layout
 and some images which can be used as template.
@@ -160,6 +166,7 @@ and some images which can be used as template.
 - **romlists:** Includes all main platforms system romlists and collection romlist. Also includes same list in excel .xlsx format and xls format for older office versions.
 - **scraper:** System overviews are stored in "scraper/@/overviews" when using nested displays. Folder has overviews in simple text files. For the moment I am using Chiculeo's ES theme overviews and Chicuelo-Mix layout overviews but they are place-holders and will chnage in future.
 - **sounds:** Sound files used in theme.
+
 
 ## Credits  
 
