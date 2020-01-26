@@ -200,6 +200,326 @@ Following category filters are being utilized in the layout:
 Layout has specific icons and flyers for the above mentioned category filters, adding new ones is simple but retaining the layout design will require new icons and flyers for additional categories.  
 
 
+## System Naming Convention
+Following table lists the full stnadard name of system/ item, layout name (under Attract-Mode) and Emulation Station/ Retropie name. The emulator name and romlist name of each system must match the Attract-Mode name given below for this layout to work properly.  
+
+### Displays Menu
+| Name | Attract Mode | EmulationStation/ Retropie |
+| --- | --- | --- |
+| Arcades | arcades | arcade |
+| Computers | computers | computer |
+| Consoles | consoles | console |
+| Handhelds | handhelds | handheld |
+| Collections | collections | custom-collections |
+
+### Platforms Menu: Arcades
+| Name | Attract Mode | EmulationStation/ Retropie |
+| --- | --- | --- |
+| American Laser Games | american_laser_games | |
+| Another Arcade Emulator | another_arcade_emulator | aae |
+| Atari G42 | atari_g42 | |
+| Atari System 1 | atari_system1 | |
+| Atari System 2 | atari_system2 | |
+| Capcom Play System I | capcom_play_systemI | cps1 |
+| Capcom Play System II | capcom_play_systemII | cps2 |
+| Capcom Play System III | capcom_play_systemIII | cps3 |
+| Capcom Sony ZN-1 | capcom_sony_zn1 | |
+| Capcom Sony ZN-2 | capcom_sony_zn2 | |
+| Cave | cave | cave |
+| Daphne | daphne | daphne |
+| DICE | dice | dice |
+| Examu Ex-Board | examu_exboard | examu |
+| FinalBurn Alpha | finalburn_alpha | fba |
+| Gaelco | gaelco | gaelco |
+| IGS PolyGame Master | IGS_PolyGame_Master | igs |
+| Irem M10-M15 | irem_m10m15 | |
+| MAME | mame | mame |
+| Namco System 22 | namco_system22 | |
+| NESiCAxLive | nesicaxlive | nesicaxlive |
+| Nintendo Arcade Systems | nintendo_arcade_systems | |
+| Psikyo | psikyo | psikyo |
+| Sammy Atomiswave | sammy_atomiswave | atomiswave |
+| Sega Classics | sega_classics | sega |
+| Sega Hikaru | sega_hikaru | hikaru |
+| Sega Model 1 | sega_model1 | model1 |
+| Sega Model 2 | sega_model2 | model2 |
+| Sega Model 3 | sega_model3 | model3 |
+| Sega Naomi | sega_naomi | naomi |
+| Sega Naomi 2 | sega_naomi2 | naomi2 |
+| Sega ST-V | sega_st_v | |
+| Sega System 1 | sega_system1 | |
+| Sega System 16 | sega_system16 | |
+| Sega System 18 | sega_system18 | |
+| Sega System 24 | sega_system24 | |
+| Sega System 32 | sega_system32 | |
+| Sega TriForce | sega_triforce | triforce |
+| Sega X Board | sega_xboard | xboard |
+| Sega Y Board | sega_yboard | yboard |
+| SNK NeoGeo MVS | snk_neogeo_mvs | |
+| Taito Type X | taito_typex | typex |
+| Taito Type X2 | taito_typex2 | typex2 |
+| ZiNc | zinc | zinc |
+
+### Platforms Menu: Computers
+| Name | Attract Mode | EmulationStation/ Retropie |
+| --- | --- | --- |
+| Aamber Pegasus | aamber_pegasus | |
+| Acorn Archimedes | acorn_archimedes | |
+| Acorn BBC Micro | acorn_bbc_micro | bbcmicro |
+| Acorn Electron | acorn_electron | |
+| Adventure Game Studio | adventure_game_studio | ags |
+| Amstrad CPC | amstrad_cpc | amstradcpc |
+| Amstrad CPC Plus | amstrad_cpcplus | |
+| Apogee BK-01 | apogee_bk01 | |
+| Apple II | apple_ii | apple2 |
+| Apple IIGS | apple_iigs | apple2gs |
+| Apple Macintosh | apple_macintosh | macintosh |
+| Apple Macintosh OS 9 | apple_macintosh_os9 | |
+| Atari 800 | atari_800 | atari800 |
+| Atari Falcon | atari_falcon | atarifalcon |
+| Atari ST | atari_st | atarist |
+| Camputers Lynx | camputers_lynx | |
+| Chip-8 | chip_8 | |
+| Coleco ADAM | coleco_adam | |
+| Commodore 16 | commodore_16 | c16 |
+| Commodore 128 | commodore_128 | c128 |
+| Commodore 64 | commodore_64 | c64 |
+| Commodore Amiga | commodore_amiga | amiga |
+| Commodore MAX Machine | commodore_max_machine | |
+| Commodore PET | commodore_pet | |
+| Commodore Plus-4 | commodore_plus4 | |
+| Commodore VIC-20 | commodore_vic20 | |
+| Dragon 32-64 | dragon_32_64 | dragon32 |
+| EACA EG2000 Colour Genie | eaca_eg2000_colour_genie | |
+| Elektronika BK | elektronika_bk | |
+| Enterprise | enterprise | enterprise |
+| Exelvision EXL 100 | exelvision_exl100 | |
+| Exidy Sorcerer | exidy_sorcerer | |
+| Fan-Made Games | fanmade_games | fanmade |
+| Flash Games | flash_games | flash |
+| Fujitsu FM Towns | fujitsu_fmtowns | fmtowns |
+| Fujitsu FM-7 | fujitsu_fm7 | fm7 |
+| Hector HRX | hector_hrx | |
+| Infocom Z-Machine | infocom_zmachine | zmachine |
+| Intertec Superbrain | intertec_superbrain | |
+| Jupiter ACE | jupiter_ace | |
+| Luxor ABC 80 | luxor_abc80 | |
+| Lviv PC-01 | lviv_pc01 | |
+| Matra and Hachette Alice | matra&hachette_alice | |
+| Mattel Aquarius | mattel_aquarius | |
+| Memotech MTX | memotech_mtx | |
+| MGT SAM Coupe | mgt_samcoupe | samcoupe |
+| Microsoft DOS | microsoft_dos | dos |
+| Microsoft MSX | microsoft_msx | msx |
+| Microsoft MSX LaserDisc | microsoft_msx | msx |
+| Microsoft MSX2 | microsoft_msx2 | msx2 |
+| Microsoft MSX2+ | microsoft_msx2+ | msx2+ |
+| Microsoft Windows 3x | microsoft_windows3x | win3x |
+| Microsoft Windows 9x | microsoft_windows9x | win9x |
+| Microsoft Windows Indie | microsoft_windows_indie | |
+| Microsoft Windows XP+ | microsoft_windowsxp+ | winxp |
+| MUGEN | mugen | mugen |
+| NEC PC-6000 | nec_pc6000 | pc-60 |
+| NEC PC-8800 | nec_pc8800 | pc-88 |
+| NEC PC-9800 | nec_pc9800 | pc-98 |
+| OpenBOR | openbor | openbor |
+| Pecom 64 | pecom_64 | |
+| Philips VG5000 | philips_vg5000 | |
+| Ports | ports | ports |
+| Radio-86RK | radio_86rk | |
+| ResidualVM | residualvm | residualvm |
+| ScummVM | scummvm | scummvm |
+| Sega SC-3000 | sega_sc3000 | |
+| Sharp MZ-700 | sharp_mz700 | |
+| Sharp MZ-2500 | sharp_mz2500 | |
+| Sharp X1 | sharp_x1 | x1 |
+| Sharp X1 Turbo | sharp_x1turbo | x1turbo |
+| Sharp X68000 | sharp_x68000 | x68000 |
+| Sinclair ZX Spectrum | sinclair_zxspectrum | zxspectrum |
+| Sinclair ZX81 | sinclair_zx81 | zx81 |
+| Sord M5 | sord_m5 | |
+| Spectravideo | spectravideo | |
+| Steam | steam | steam |
+| Tandy TRS-80 | tandy_trs80 | trs-80 |
+| Tandy TRS-80 Color Computer | tandy_trs80_color_computer | coco |
+| Tangerine Oric Atmos | tangerine_oric_atmos | |
+| Tangerine Oric-1 | tangerine_oric1 | oric |
+| Tangerine Oric Telestrat | tangerine_oric_telestrat | |
+| Texas Instruments TI-99 | texas_instruments_ti99 | ti99 |
+| Thomson TO8 | thomson_to8 | |
+| Tomy Tutor | tomy_tutor | |
+| Vector-06C | vector_06c | |
+
+### Platforms Menu: Consoles
+| Name | Attract Mode | EmulationStation/ Retropie |
+| --- | --- | --- |
+| ALF TV Game | alf_tvgame | |
+| Amstrad GX4000 | amstrad_gx4000 | |
+| APF Imagination Machine | apf_imagination_machine | |
+| Apple Bandai Pippin | apple_bandai_pippin | |
+| Atari 2600 | atari_2600 | atari2600 |
+| Atari 5200 | atari_5200 | atari5200 |
+| Atari 7800 | atari_7800 | atari7800 |
+| Atari Jaguar | atari_jaguar | atarijaguar |
+| Atari Jaguar CD | atari_jaguarcd | atarijaguarcd |
+| Atari XEGS | atari_xegs | atarixe |
+| Bally Astrocade | bally_astrocade | astrocade |
+| Bandai Super Vision 8000 | bandai_supervision_8000 | supervision8000 |
+| Casio Loopy | casio_loopy | loopy |
+| Casio PV-1000 | casio_pv1000 | pv1000 |
+| Coleco ColecoVision | coleco_colecovision | colecovision |
+| Coleco Gemini | coleco_gemini | colecogemini |
+| Coleco Telstar | coleco_telstar | colecotelstar |
+| Commodore Amiga CD32 | commodore_amiga_cd32 | amigacd32 |
+| Commodore CDTV | commodore_cdtv | |
+| Emerson Arcadia 2001 | emerson_arcadia2001 | arcadia |
+| Entex Adventure Vision | entex_adventure_vision | |
+| Epoch Super Cassette Vision | epoch_supercassette_vision | |
+| Fairchild Channel F | fairchild_channelf | channelf |
+| Fujitsu FM Towns Marty | fujitsu_fmtowns_marty | |
+| Funtech Super Acan | funtech_superacan | |
+| Game Wave Family Entertainment System | game_wave_family_entertainment_system | |
+| GCE Vectrex | gce_vectrex | vectrex |
+| Interton VC 4000 | interton_vc4000 | |
+| Magnavox Odyssey | magnavox_odyssey | odyssey |
+| Magnavox Odyssey 2 | magnavox_odyssey2 | odyssey2 |
+| Mattel HyperScan | mattel_hyperscan | hyperscan |
+| Mattel Intellivision | mattel_intellivision | intellivision |
+| Microsoft XBOX | microsoft_xbox | xbox |
+| Microsoft XBOX 360 | microsoft_xbox360 | xbox360 |
+| Microsoft XBOX One | microsoft_xboxone | xboxone |
+| NEC PC-Engine | nec_pcengine | pcengine |
+| NEC PC-Engine CD | nec_pcengine_cd | pce-cd |
+| NEC PC-Engine Duo | nec_pcengine_duo | pce-duo |
+| NEC PC-Engine SuperGrafx | nec_pcengine_supergrafx | pce-supergrafx |
+| NEC PC-FX | nec_pcfx | pcfx |
+| NEC SuperGrafx | nec_supergrafx | supergrafx |
+| NEC TurboDuo | nec_turboduo | tg-td |
+| NEC TurboGrafx-16 | nec_turbografx16 | tg16 |
+| NEC TurboGrafx-CD | nec_turbografxcd | tg-cd |
+| Nintendo 64 | nintendo_64 | n64 |
+| Nintendo Entertainment System | nintendo_entertainment_system | nes |
+| Nintendo Famicom | nintendo_famicom | famicom |
+| Nintendo Famicom Disk System | nintendo_famicom_disk_system | fds |
+| Nintendo Gamecube | nintendo_gamecube | gc |
+| Nintendo Satellaview | nintendo_satellaview | satellaview |
+| Nintendo Sufami Turbo | nintendo_sufami_turbo | sufamiturbo |
+| Nintendo Super Famicom | nintendo_super_famicom | sfc |
+| Nintendo Super GameBoy | nintendo_super_gameboy | |
+| Nintendo TV Game | nintendo_tvgame | |
+| Nintendo Virtual Boy | nintendo_virtualboy | virtualboy |
+| Nintendo Wii | nintendo_wii | wii |
+| Nintendo Wii U | nintendo_wiiu | wiiu |
+| Nintendo WiiWare | nintendo_wiiware | wiiware |
+| Nuon | nuon | nuon |
+| Othello Multivision | othello_multivision | |
+| Panasonic 3DO | panasonic_3do | 3do |
+| Philips CD-i | philips_cdi | cdi |
+| Philips Videopac G7000 | philips_videopac_g7000 | |
+| Philips Videopac G7200 | philips_videopac_g7200 | |
+| Philips Videopac+ G7400 | philips_videopac+_g7400 | videopac |
+| RCA Studio II | rca_studio_ii | |
+| Sega 32X | sega_32x | sega32x |
+| Sega CD | sega_cd | segacd |
+| Sega CD 32X | sega_cd_32x | |
+| Sega Dreamcast | sega_dreamcast | dreamcast |
+| Sega Genesis | sega_genesis | gen |
+| Sega Mark III | sega_mark_iii | |
+| Sega Master System | sega_master_system | mastersystem |
+| Sega Master System II | sega_master_system_ii | mastersystem2 |
+| Sega Mega 32x (Europe) | sega_mega_32x_(europe) | |
+| Sega Mega CD (Europe) | sega_mega_cd_(europe) | megacd |
+| Sega Mega Drive (Europe) | sega_mega_drive_(europe) | megadrive |
+| Sega Mega Drive (Japan) | sega_mega_drive_(japan) | megadrive_japan |
+| Sega Pico | sega_pico | pico |
+| Sega Saturn | sega_saturn | saturn |
+| Sega SG-1000 | sega_sg_1000 | sg-1000 |
+| SNK NeoGeo AES | snk_neogeo_aes | neogeo |
+| SNK NeoGeo CD | snk_neogeo_cd | neogeocd |
+| Sony PlayStation | sony_playstation | psx |
+| Sony PlayStation 2 | sony_playstation2 | ps2 |
+| Sony PlayStation 3 | sony_playstation3 | ps3 |
+| Sony PlayStation 4 | sony_playstation4 | ps4 |
+| Super Nintendo Entertainment System | super_nintendo_entertainment_system | snes |
+| Super Nintendo Entertainment System | super_nintendo_entertainment_system | snes |
+| View-Master Interactive Vision | viewmaster_interactive_vision | |
+| VTech CreatiVision | vtech_creativision | crvision |
+| VTech Socrates | vtech_socrates | |
+| WoW Action Max | wow_actionmax | |
+| Zeebo | zeebo | zeebo |
+
+### Platforms Menu: Handhelds
+| Name | Attract Mode | EmulationStation/ Retropie |
+| --- | --- | --- |
+| Android | android | |
+| Apple iOS | apple_ios | |
+| Atari Lynx | atari_lynx | atarilynx |
+| Bandai Wonderswan | bandai_wonderswan | wonderswan |
+| Bandai Wonderswan Color | bandai_wonderswan_color | wonderswancolor |
+| Bandai SwanCrystal | bandai_swancrystal | swancrystal |
+| Creatronic Mega Duck | creatronic_megaduck | megaduck |
+| Epoch Game Pocket Computer | epoch_gamepocket_computer | gamepocket |
+| GamePark 32 | gamepark32 | gamepark32 |
+| Gizmondo | gizmondo | gizmondo |
+| Hartung Game Master | hartung_gamemaster | gamemaster |
+| NEC PC-Engine GT | nec_pcengine_gt | pce-gt |
+| NEC TurboExpress | nec_turboexpress | turboexpress |
+| Nintendo 3DS | nintendo_3ds | n3ds |
+| Nintendo DS | nintendo_ds | nds |
+| Nintendo Game & Watch | nintendo_game&watch | gameandwatch |
+| Nintendo Game Boy | nintendo_gameboy | gb |
+| Nintendo Game Boy Advance | nintendo_gameboy_advance | gba |
+| Nintendo Game Boy Color | nintendo_gameboy_color | gbc |
+| Nintendo Pokemon Mini | nintendo_pokemon_mini | |
+| Nintendo Switch | nintendo_switch | switch |
+| Nokia N-Gage | nokia_ngage | ngage |
+| Sega Game Gear | sega_gamegear | gamegear |
+| Sega Nomad | sega_nomad | nomad |
+| SNK NeoGeo Pocket | snk_neogeo_pocket | ngp |
+| SNK NeoGeo Pocket Color | snk_neogeo_pocket_color | ngpc |
+| Sony PlayStation Portable | sony_playstation_portable | psp |
+| Sony PlayStation Portable Minis | sony_playstation_portable_minis | |
+| Sony Playstation Vita | sony_playstation_vita | psvita |
+| Tiger Game Com | tiger_game_com | gamecom |
+| Watara Supervision | watara_supervision | |
+
+### Platforms Menu: Collections
+| Name | Attract Mode | EmulationStation/ Retropie |
+| --- | --- | --- |
+| Favorites | favorites | auto-favorites |
+| Last Played | last_played | auto-lastplayed |
+| Series | series | series |
+
+### Collections Menu: Genres
+| Name | Attract Mode | EmulationStation/ Retropie |
+| --- | --- | --- |
+| All | all | auto-allgames |
+| Action | action | action |
+| Adventure | adventure | adventure |
+| Beat 'Em Up | beat_'em_up | btmups |
+| Cards | cards | cards |
+| Fighting | fighting | fighting |
+| Horror | horror | horror |
+| Mahjong | mahjong | mahjong |
+| Pinball | pinball | pinball |
+| Platform | platform | platformer |
+| Puzzle | puzzle | puzzle |
+| Racing | racing | racing |
+| Rhythem | rhythem | rhythem |
+| RPG | rpg | rpg |
+| Shooter | shooter | shmups |
+| Sports | sports | sports |
+| Strategy | strategy | strategy |
+
+### Other Apps
+| Name | Attract Mode | EmulationStation/ Retropie |
+| --- | --- | --- |
+| RetroPie | retropie | retropie |
+| Steam | steam | steam |
+| Stratagus | stratagus | stratagus |
+| XBMC Kodi | xbmc_kodi | kodi |
+
+
 ## Contents of Downloaded Zip
 - **extras:** Includes pre-made attract.cfg, attract.am, default-display.cfg and default-emulator.cfg files. Includes fonts utilized in layout
 and some images which can be used as template.
