@@ -172,6 +172,33 @@ Please read the following wiki entries for a better understanding of how the lay
 
 * Using Leap plugin allows users to skip empty filters this allows for creating a default-display.cfg which creates all the filters in use. This allows for easier addition of systems as system pick default values from default-display and if a filter display has no roms within in rather then showing an empty filter display leap skips/ jumps over it.  
 
+* This organization setup with D-pad set to next/ previous letter and next /previous page allows to acces desired item in a very efficient manner and flows naturally just like moving between folders and sub-folders. Though for best utilization this requires one item to be listed in only one category requiring manual edit as most online sources don't work this way.
+
+### Standard Filters
+Following category filters are being utilized in the layout:
+
+| Name | Description | 
+| --- | --- |
+| All (default) | Lists all items in all categories/ filters in a system |
+| Action | Action and Multiple genre items like Metal Gear Solid |
+| Adventure | Adventure items including visual novels, text adventures etc |  
+| Beat 'Em Up | Beat 'Em Up (brawlers) |
+| Cards | All Card games go here. Most retro PC systems have enough titles to warrant a place |
+| Fighting | Fighting titles go here including wrestling, boxing etc |
+| Horror | Horror titles go here, this one is subject based rather then game mechanic based |
+| Mahjong | Mahjong titles go here, again a huge number of titles which warrant a separate category |
+| Platform | All platform titles go here including run 'n gun |
+| Puzzle | Puzzle items |
+| Racing | Racing items |
+| Rhythem | Rhythem based items |
+| RPG | Role playing items |
+| Shooter | Shooter items including shoot 'em up (vertical or horizental rotation) and FPS go here |
+| Sports | Sports based items |
+| Strategy | Startegy items |
+
+**Note**  
+Layout has specific icons and flyers for the above mentioned category filters, adding new ones is simple but retaining the layout design will require new icons and flyers for additional categories.  
+
 
 ## Contents of Downloaded Zip
 - **extras:** Includes pre-made attract.cfg, attract.am, default-display.cfg and default-emulator.cfg files. Includes fonts utilized in layout
