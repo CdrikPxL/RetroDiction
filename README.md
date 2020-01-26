@@ -155,8 +155,22 @@ Please read the following wiki entries for a better understanding of how the lay
 * (loop) means that function is in a loop i.e. for items A, B and C it moves A>B>C>A or C<B<A<C.   
 
 
-## Display Hierarchy
+## Hierarchies
+### Displays Hierarchies
 ![Display Hierarchy Flow Chart](https://i.imgur.com/2TM8lSg.png)
+
+### Filters Hierarchies
+![Filters Hierarchy Flow Chart](https://i.imgur.com/u5Re6W4.png)
+
+* Entering any System Menu, Atari 2600 in above case, will always open All Filter Display unless user moves between System Menu and Platform menu in which case last opened Filter Display is opened when moving from Platform Menu to System Menu.  
+
+* All filter display is the default filter display if no other filter displays are configured.  
+
+* After All filter, rest of the filters are accessed in an alphabetical order i.e. A > B > C ...  
+
+* Filter Displays are in a loop so moving forward from last filter will open first filter and moving backward from first filter will open the last filter.  
+
+* Using Leap plugin allows users to skip empty filters this allows for creating a default-display.cfg which creates all the filters in use. This allows for easier addition of systems as system pick default values from default-display and if a filter display has no roms within in rather then showing an empty filter display leap skips/ jumps over it.  
 
 
 ## Contents of Downloaded Zip
