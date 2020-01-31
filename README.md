@@ -141,7 +141,6 @@ Please read the following wiki entries for a better understanding of how the lay
 | Select | A | Enter |
 | Back | B | Escape |
 | Search (Series) | Y | Y |
-| Info Panel | (disabled) | (disabled) |
 
 ### Custom Option Menu (System Menu)
 | Description | XBox 360 Controller | Keyboard | 
