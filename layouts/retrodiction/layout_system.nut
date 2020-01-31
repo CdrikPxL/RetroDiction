@@ -29,6 +29,7 @@ fe.do_nut("scripts/formatTime.nut") //load format time module
 fe.do_nut("scripts/objects/keyboard-search/module.nut") //load keyboard search module
 fe.do_nut("scripts/leap/plugin.nut") //load leap plugin
 fe.do_nut("scripts/preserve-art.nut") //load preserve-art module
+fe.do_nut("scripts/series_search.nut") //load series_search plugin
 fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
 
 
@@ -260,7 +261,7 @@ function on_greleasetransition(ttype, var, ttime)
 			 grelease.msg = "?"
 	}
 
-//Game: Number of Palyers
+//Game: Number of Players
 local gplayer = fe.add_text("[gplayer]", 1710, 50, 250, 0);
 gplayer.font="BebasNeue Book.ttf";
 gplayer.align = Align.TopCentre;
@@ -508,8 +509,8 @@ class ShufflePow extends Shuffle
 
 // Create an instance of the extended class
 //local list: these options effect gamelist. local pow: these options effect linked image. save="themename": saves the location/position of item selected and returns to it. hide=true: hides the items in list if they exceed list size i.e. doesn't repeat items. loop=flase: does not repeat the list after reaching last item on list. 
-local list = ShuffleList({ save="retrodiction", hide=true, loop=false, reset=false, slots=list }); 
-local pow = ShufflePow({ save="retrodiction", hide=true, loop=false, reset=false, slots=pow});
+local list = ShuffleList({ save="retrodiction", hide=true, loop=false, reset=true, slots=list }); 
+local pow = ShufflePow({ save="retrodiction", hide=true, loop=false, reset=true, slots=pow});
 
 
 //#####CUSTOM OVERLAY - GAME INFO#####

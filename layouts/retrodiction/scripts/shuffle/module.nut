@@ -120,18 +120,6 @@ class Shuffle {
 			case "next_game":
 				if (this._loop == false && fe.list.index == fe.list.size-1) return true;
 				break;
-			// thanks to iOtero for this modified code for filters, discussed here: http://forum.attractmode.org/index.php?topic=2946.msg22577#msg22577
-			//I added instructions for "prev_filter" and "filters_menu" as they are being used in this layout
-			case "prev_filter":
-				this._selected = 0;
-				fe.list.index = 0;
-			case "next_filter":
-				this._selected = 0;
-				fe.list.index = 0;
-			case "filters_menu":
-				this._selected = 0;
-				fe.list.index = 0;	
-			break;
 			// do not update selection for these signals
 			case "random_game":
 			case "prev_letter":
