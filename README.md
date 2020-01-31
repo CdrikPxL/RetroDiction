@@ -567,6 +567,9 @@ Official Repo: https://github.com/keilmillerjr/leap-plugin
 Preserve Art module is created by liquid8d. This module helps us in better adjusting the artworkby offering fit and fill options while keeping the aspect ratio intact, it also offers anchoring the artwork to specific side. In this layout "Flyers" artwork utilizes this. There are small modficatiosn made to get desired results.  
 Official Repo: https://github.com/liquid8d/attract-extra/tree/master/modules  
 
+#### Search Series (Based on keyboard-search plugin by Andrew)
+This is a modified version of Andrew's keyboard-search plugin. It now searches for series of currently selected item and displays all items in the current list with same series in search results. This plugin will really shine in unified master lists. The original plugin (keyboard-search) is a part of Attract-Mode release package. Much thanks to andrew's for this handy tool. 
+
 #### Shuffle Module  
 Shuffle module is created by Keil Miller. Shuffle module allows us to use slots for better handling of game list. It is used as an alternate to Attract-Mode's default list box. There are small modifications made in the module to support moving between filters.  
 Official Repo: https://github.com/keilmillerjr/shuffle-module  
