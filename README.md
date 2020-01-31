@@ -108,6 +108,7 @@ Please read the following wiki entries for a better understanding of how the lay
 | Next Page | D-pad Down (disabled) | Page Down (disabled) |
 | Select | A | Enter |
 | Back (exit) | B | Escape |
+| Search (Series) | Y (disabled) | Y (disabled) |
 | Info Panel | X (hold) | X (hold) |
 
 ### Platform Menu
@@ -123,6 +124,7 @@ Please read the following wiki entries for a better understanding of how the lay
 | Next Page | D-pad Down | Page Down |
 | Select | A | Enter |
 | Back | B | Escape |
+| Search (Series) | Y (disabled) | Y (disabled) |
 | Info Panel | X (hold) | X (hold) |
 
 ### System Menu
@@ -138,6 +140,8 @@ Please read the following wiki entries for a better understanding of how the lay
 | Next Page | D-pad Down | Page Down |
 | Select | A | Enter |
 | Back | B | Escape |
+| Search (Series) | Y | Y |
+| Info Panel | (disabled) | (disabled) |
 
 ### Custom Option Menu (System Menu)
 | Description | XBox 360 Controller | Keyboard | 
