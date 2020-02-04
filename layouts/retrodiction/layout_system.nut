@@ -101,15 +101,10 @@ function snap_on_tick(tick_time) {
 
 fe.add_ticks_callback(this, "snap_on_tick")
 
-//Game: System Logo & Frame 
+//Game: System Logos
 local syslogo = fe.add_image("images/syslogo/[Emulator].png", 550, 646, 200,100.625);
 syslogo.mipmap = true;
 syslogo.trigger = Transition.EndNavigation;
-syslogo.zorder = 4;
-
-local syslogo_frame = fe.add_image ("images/syslogo_frame.png", 550, 646,200,100.625); 
-syslogo_frame.mipmap = true;
-syslogo_frame = 3;
 
 //Game: Category Icon
 local caticon = fe.add_image ("images/categories/[Category].png", 1497, 304, 100, 100);
@@ -508,7 +503,7 @@ class ShufflePow extends Shuffle
 	}
 
 // Create an instance of the extended class
-//local list: these options effect gamelist. local pow: these options effect linked image. save="themename": saves the location/position of item selected and returns to it. hide=true: hides the items in list if they exceed list size i.e. doesn't repeat items. loop=flase: does not repeat the list after reaching last item on list. 
+//local list: these options effect gamelist. local pow: these options effect linked image. save="themename": saves the location/position of item selected and returns to it. hide=true: hides the items in list if they exceed list size i.e. doesn't repeat items. loop=flase: does not repeat the list after reaching last item on list, reset=true resets so pointer is on the first item of the list.
 local list = ShuffleList({ save="retrodiction", hide=true, loop=false, reset=true, slots=list }); 
 local pow = ShufflePow({ save="retrodiction", hide=true, loop=false, reset=true, slots=pow});
 
