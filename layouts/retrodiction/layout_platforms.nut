@@ -37,9 +37,9 @@ syslogo.mipmap = true;
 syslogo.trigger = Transition.EndNavigation;
 
 //Platforms Title
-local platformstitle = fe.add_image("images/platstitle/[DisplayName].png", 130, -4, 0, 0);
-platformstitle.mipmap = true;
-platformstitle.trigger = Transition.EndNavigation;
+local platform_title = fe.add_image("images/titles/[DisplayName].png", 130, -4, 0, 0);
+platform_title.mipmap = true;
+platform_title.trigger = Transition.EndNavigation;
 
 //List Sperators
 local listseperator = fe.add_image("images/seperator_up.png", 50, 105, 560, 0);

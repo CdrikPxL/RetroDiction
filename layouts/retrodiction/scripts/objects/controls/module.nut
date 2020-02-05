@@ -262,7 +262,7 @@ class FeLabel extends FeControl {
     template_selected = {
         bg_alpha = 0, //EDITED 255 to 0
         bg_rgb = [ 0, 0, 0 ], //EDITED [ 0, 150, 0 ] to [ 0, 0, 0 ]
-        rgb = [ 0, 144, 255 ] //EDITED [ 0, 50, 0 ] to [ 0, 144, 255 ]
+        rgb = [ 255, 230, 94 ] //EDITED [ 0, 50, 0 ] to [ 0, 144, 255 ]
     }
 
     function create(surface) {
@@ -502,7 +502,7 @@ class FeLabel2 extends FeControl2{
     template_selected = {
         bg_alpha = 0, //EDITED 255 to 0
         bg_rgb = [ 0, 0, 0 ], //EDITED [ 0, 150, 0 ] to [ 0, 0, 0 ]
-        rgb = [ 0, 144, 255 ] //EDITED [ 0, 50, 0 ] to [ 0, 144, 255 ]
+        rgb = [ 255, 230, 94 ] //EDITED [ 0, 50, 0 ] to [ 0, 144, 255 ]
     }
 
     function create(surface) {

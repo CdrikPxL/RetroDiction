@@ -25,7 +25,6 @@ background.mipmap = true;
 
 //Load Modules & Plug-ins
 fe.do_nut("scripts/objects/controls/module.nut") //load controls module
-fe.do_nut("scripts/formatTime.nut") //load format time module
 fe.do_nut("scripts/objects/keyboard-search/module.nut") //load keyboard search module
 fe.do_nut("scripts/leap/plugin.nut") //load leap plugin
 fe.do_nut("scripts/preserve-art.nut") //load preserve-art module
@@ -36,8 +35,8 @@ fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
 //#####ARTWORKS#####
 
 //Layout items
-local catfilter = fe.add_image("images/catfilter/[FilterName].png", 130, -5, 360, 117);
-catfilter.mipmap = true;
+local filter_title = fe.add_image("images/titles/[FilterName].png", 130, -5, 0, 0);
+filter_title.mipmap = true;
 
 local listseperator_up = fe.add_image("images/seperator_up.png", 50, 105, 560, 0);
 listseperator_up.mipmap = true;
@@ -542,47 +541,67 @@ function on_gtitletransition(ttype, var, ttime)
 	}
 
 //Custom Overlay: Game Info: Play Time
-local gtime = g_surface.add_text("[gtime]", 120, 251, 290, 0);
-gtime.font="BebasNeue Book.ttf";
-gtime.align = Align.MiddleCentre;
-gtime.word_wrap = true;
-gtime.charsize = 32;
-gtime.style = Style.Bold;
-gtime.set_rgb(220,220,220);
-
-fe.add_transition_callback("on_gtimetransition")
-function on_gtimetransition(ttype, var, ttime)
+// FormatTime is oriinalluy created by Keil Miller, some modifications were made by Oomek in my request.
+function PlayTimeFormatted()
 	{
-		if (ttype == Transition.EndNavigation) 
-			 gtime.msg = "[PlayedTime]"
-		if (ttype == Transition.StartLayout)
-			 gtime.msg = "[PlayedTime]"
-		if (ttype == Transition.ToNewList)
-			 gtime.msg = "[PlayedTime]"
-		if (fe.game_info(Info.PlayedTime) == "")
-			 gtime.msg = "---"
+		local totalSeconds = 0;
+		try{ totalSeconds = fe.game_info( Info.PlayedTime ).tointeger(); } catch(e) {return "not a number" }
+
+		local play_time =
+			{
+				seconds = totalSeconds % 60,
+				minutes = floor((totalSeconds % 3600) / 60),
+				hours = floor((totalSeconds % 86400) / 3600),
+				days = floor((totalSeconds % (86400 * 30)) / 86400),
+			}
+
+		local string = "";
+
+			if (play_time.days > 0) string +=" Days: " + play_time.days;
+			if (play_time.hours > 0) string +=" Hours: " + play_time.hours;
+			if (play_time.minutes > 0) string +=" Minutes: " + play_time.minutes;
+			if (play_time.seconds > 0) string +=" Seconds: " + play_time.seconds;
+			if (string == "") return "---"
+			else return lstrip(string);
 	}
 
-//Custom Overlay: Game Info: Play Count
-local gcount = g_surface.add_text("[gcount]", 120, 343, 290, 0);
-gcount.font="BebasNeue Book.ttf";
-gcount.align = Align.MiddleCentre;
-gcount.word_wrap = true;
-gcount.charsize = 32;
-gcount.style = Style.Bold;
-gcount.set_rgb(220,220,220);
-
-fe.add_transition_callback("on_gcounttransition")
-function on_gcounttransition(ttype, var, ttime)
+local gptime = g_surface.add_text("[!PlayTimeFormatted]", 120, 251, 290, 0);
+gptime.font="BebasNeue Book.ttf";
+gptime.align = Align.MiddleCentre;
+gptime.word_wrap = true;
+gptime.charsize = 32;
+gptime.style = Style.Bold;
+gptime.set_rgb(220,220,220);
+	
+function playtime_transition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-			 gcount.msg = fe.game_info(Info.PlayedCount)+ " Times"
+			{
+				gptime.msg = PlayTimeFormatted()
+			}
+	}
+fe.add_transition_callback("playtime_transition")
+
+//Custom Overlay: Game Info: Play Count
+local gcount = g_surface.add_text("[gmcount]", 120, 343, 290, 0);
+gmcount.font="BebasNeue Book.ttf";
+gmcount.align = Align.MiddleCentre;
+gmcount.word_wrap = true;
+gmcount.charsize = 32;
+gmcount.style = Style.Bold;
+gmcount.set_rgb(220,220,220);
+
+fe.add_transition_callback("on_gmcountttransition")
+function on_gmcounttransition(ttype, var, ttime)
+	{
+		if (ttype == Transition.EndNavigation)
+			 gmcount.msg = fe.game_info(Info.PlayedCount)+ " Times"
 		if (ttype == Transition.StartLayout)
-       gcount.msg = fe.game_info(Info.PlayedCount)+ " Times"
+       gmcount.msg = fe.game_info(Info.PlayedCount)+ " Times"
 		if (ttype == Transition.ToNewList)
-       gcount.msg = fe.game_info(Info.PlayedCount)+ " Times"
+       gmcount.msg = fe.game_info(Info.PlayedCount)+ " Times"
 		if (fe.game_info(Info.PlayedCount) == "")
-	     gcount.msg = "---"
+	     gmcount.msg = "---"
 	}
 
 //Custom Overlay: Game Info: Database
@@ -608,7 +627,7 @@ function on_gdbasetransition(ttype, var, ttime)
 	}
 
 //Custom Overlay: Game Info: Media Format
-local gmedia = g_surface.add_image("images/format/[Buttons]", 170, 493, 80, 80);
+local gmedia = g_surface.add_image("images/media_format/[Buttons]", 170, 493, 0, 0);
 gmedia.trigger = Transition.EndNavigation;
 
 //Custom Overlay: Game Info: Media Count
