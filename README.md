@@ -855,7 +855,62 @@ Picture: https://imgur.com/gallery/ClrNy6M
 #### Icons (Genre & Misc)
 All icons are from Game-icons.net, excepetions are listed seperately.
 
+##### Category/ Genre Icons
+
 <details>
-  <summary>Expand Icon Credits</summary>
-To be added!
+  <summary>Expand Category/ Genre Icon Credits</summary>.
+
+Action: Sprint icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/sprint.html
+
+Adventure: Treasure map icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/treasure-map.html
+
+Beat 'Em Up: Dark squad icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/dark-squad.html
+
+Blocks: S Brick icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/s-brick.html
+
+Board: Conway Game of Life Glider icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/conway-life-glider.html
+
+Cards: Card ace of spades icon by Simon (aussiesim) under CC BY 3.0  
+Link: https://game-icons.net/1x1/aussiesim/card-ace-spades.html
+
+Fighting: Fist icon by Skoll under CC BY 3.0  
+Link: https://game-icons.net/1x1/skoll/fist.html
+
+Horror: Skull sabertooth icon by DarkZaitzev under CC BY 3.0  
+Link: https://game-icons.net/1x1/darkzaitzev/skull-sabertooth.html
+
+Mahjong: Card exchange icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/card-exchange.html
+
+Platform: Jump across icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/jump-across.html
+
+Pinball: Pinball flipper icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/pinball-flipper.html
+
+Puzzle: Jigsaw piece icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/jigsaw-piece.html
+
+Racing: Car wheel icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/car-wheel.html
+
+Rhythem: Double quaver icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/double-quaver.html
+
+RPG: Battle gear icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/battle-gear.html
+
+Shooter: Strafe icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/strafe.html
+
+Sports: Soccer ball icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/soccer-ball.html
+
+Strategy: Chess rook icon by Skoll under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/sprint.html
 </details>
