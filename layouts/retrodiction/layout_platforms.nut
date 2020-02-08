@@ -12,6 +12,8 @@ fe.layout.width=1920;
 fe.layout.height=1080;
 
 //Load Modules & Plug-ins
+fe.do_nut("scripts/objects/controls/module.nut") //load controls module
+fe.do_nut("scripts/objects/keyboard-search/module.nut") //load keyboard search module
 fe.do_nut("scripts/leap/plugin.nut") //load leap plugin
 fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
 
@@ -23,7 +25,7 @@ background.mipmap = true;
 //#####PLATFORMS: FLYERS, LOGOS & TITLE#####
 
 //System Flyers
-local sysflyers = fe.add_image("images/sysflyer/[Name].png", 0, 0, 0, 0);
+local sysflyers = fe.add_image("images/sysflyer/[Name].png", 660, 0, 0, 0);
 sysflyers.mipmap = true;
 sysflyers.trigger = Transition.EndNavigation;
 
@@ -34,6 +36,7 @@ listbg.mipmap = true;
 //System Logos
 local syslogo = fe.add_image("images/syslogo/[Name].png", 490, 440, 0, 0);
 syslogo.mipmap = true;
+syslogo.zorder = 3;
 syslogo.trigger = Transition.EndNavigation;
 
 //Platforms Title
@@ -47,10 +50,6 @@ listseperator.mipmap = true;
 
 local listseperator = fe.add_image("images/seperator_down.png", 50, 995, 560, 0);
 listseperator.mipmap = true;
-
-//Info Button
-local info_button = fe.add_image ("images/info_button.png", 1260,0,0,0);
-info_button.mipmap = true;
 
 //Blinking Arrows 
 //Next/Previous Game
@@ -170,7 +169,7 @@ local list = [];
 	list.push(fe.add_text("[Title]", 76, 900, 400, 60));
 	list.push(fe.add_text("[Title]", 76, 950, 400, 60));
 	
-// Extend the Shuffle class
+//Extend the Shuffle class
 class ShuffleList extends Shuffle
 	{
 		function refresh()
@@ -178,7 +177,7 @@ class ShuffleList extends Shuffle
 				base.refresh();
 			}
 
-// Overwrite the _refreshSelected function
+//Overwrite the _refreshSelected function
 		function _refreshSelected(slot)
 			{
 				slot.font="TulpenOne-Regular-Caps.ttf";
@@ -188,7 +187,7 @@ class ShuffleList extends Shuffle
 				slot.set_rgb ( 220, 220, 220 );
 			}
 	
-// Overwrite the _refreshDeselected function
+//Overwrite the _refreshDeselected function
 		function _refreshDeselected(slot)
 			{
 				slot.font="TulpenOne-Regular-Caps.ttf";
@@ -228,7 +227,7 @@ class ShufflePow extends Shuffle
 				base.refresh();
 			}
 
-// // Overwrite the _refreshSelected function
+// Overwrite the _refreshSelected function
 		function _refreshSelected(slot)
 			{
 				slot.visible = true;
@@ -243,8 +242,8 @@ class ShufflePow extends Shuffle
 
 // Create an instance of the extended class
 //local list: these options effect gamelist. local pow: these options effect linked image. save="themename": saves the location/position of item selected and returns to it. hide=true: hides the items in list if they exceed list size i.e. doesn't repeat items. loop=flase: does not repeat the list after reaching last item on list, reset=true resets so pointer is on the first item of the list.
-local list = ShuffleList({ save="retrodiction", hide=true, loop=false, reset=true, slots=list }); 
-local pow = ShufflePow({ save="retrodiction", hide=true, loop=false, reset=true, slots=pow});
+local list = ShuffleList({ save="retrodiction", hide=true, loop=false, reset=false, slots=list }); 
+local pow = ShufflePow({ save="retrodiction", hide=true, loop=false, reset=false, slots=pow});
 
 
 //System Information
@@ -276,16 +275,14 @@ fe.add_transition_callback("on_sys_oviewtransition")
 function on_sys_oviewtransition(ttype, var, ttime)
 	{
 		if ( ttype == Transition.EndNavigation)
-		   sys_oview.msg = fe.game_info(Info.Overview)
+		sys_oview.msg = fe.game_info(Info.Overview)
 		if ( ttype == Transition.StartLayout)
-		   sys_oview.msg = fe.game_info(Info.Overview)
+		sys_oview.msg = fe.game_info(Info.Overview)
 		if ( ttype == Transition.ToNewList)
-		   sys_oview.msg = fe.game_info(Info.Overview)
+		sys_oview.msg = fe.game_info(Info.Overview)
 		if  (fe.game_info(Info.Overview) == "")
-		   sys_oview.msg = "Overview not avavilable."
+		sys_oview.msg = "Overview not avavilable."
 	}
-
-fe.add_ticks_callback( "tick_sys_oview" );
 
 //System: Release
 local sys_release = fe.add_text("[sys_release]", 1024, 82, 250, 100);
@@ -301,16 +298,14 @@ fe.add_transition_callback("on_sys_releasetransition")
 function on_sys_releasetransition(ttype, var, ttime)
 	{
 		if ( ttype == Transition.EndNavigation)
-		   sys_release.msg = fe.game_info(Info.Year)
+		sys_release.msg = fe.game_info(Info.Year)
 		if ( ttype == Transition.StartLayout)
-		   sys_release.msg = fe.game_info(Info.Year)
+		sys_release.msg = fe.game_info(Info.Year)
 		if ( ttype == Transition.ToNewList)
-		   sys_release.msg = fe.game_info(Info.Year)
+		sys_release.msg = fe.game_info(Info.Year)
 		if  (fe.game_info(Info.Year) == "")
-		   sys_release.msg = "---"
+		sys_release.msg = "---"
 	}
-
-fe.add_ticks_callback( "tick_sys_release" );
 
 //System: Number of Items
 local sys_sumtotal = fe.add_text("[sys_sumtotal]", 1310, 82, 250, 100);
@@ -326,16 +321,14 @@ fe.add_transition_callback("on_sys_sumtotaltransition")
 function on_sys_sumtotaltransition(ttype, var, ttime)
 	{
 		if ( ttype == Transition.EndNavigation)
-		   sys_sumtotal.msg = "0"
+		sys_sumtotal.msg = "0"
 		if ( ttype == Transition.StartLayout)
-		   sys_sumtotal.msg = "0"
+		sys_sumtotal.msg = "0"
 		if ( ttype == Transition.ToNewList)
-		   sys_sumtotal.msg = "0"
+		sys_sumtotal.msg = "0"
 		if  (fe.game_info(Info.Year) == "")
-		   sys_sumtotal.msg = "---"
+		sys_sumtotal.msg = "---"
 	}
-
-fe.add_ticks_callback( "tick_sys_sumtotal" );
 
 //System: Technology
 local sys_tech = fe.add_text("[sys_tech]", 1200, 178, 280, 100);
@@ -351,16 +344,14 @@ fe.add_transition_callback("on_sys_techtransition")
 function on_sys_techtransition(ttype, var, ttime)
 	{
 		if ( ttype == Transition.EndNavigation)
-		   sys_tech.msg = fe.game_info(Info.Extra) 
+		sys_tech.msg = fe.game_info(Info.Extra) 
 		if ( ttype == Transition.StartLayout)
-		   sys_tech.msg = fe.game_info(Info.Extra)
+		sys_tech.msg = fe.game_info(Info.Extra)
 		if ( ttype == Transition.ToNewList)
-		   sys_tech.msg = fe.game_info(Info.Extra)
+		sys_tech.msg = fe.game_info(Info.Extra)
 		if  (fe.game_info(Info.Extra) == "")
-		   sys_tech.msg = "---"
+		sys_tech.msg = "---"
 	}
-
-fe.add_ticks_callback( "tick_sys_tech" );
 
 //System: Generation
 local sys_gen = fe.add_text("[sys_gen]", 1190, 266, 280, 100);
@@ -376,29 +367,284 @@ fe.add_transition_callback("on_sys_gentransition")
 function on_sys_gentransition(ttype, var, ttime)
 	{
 		if ( ttype == Transition.EndNavigation)
-		   sys_gen.msg = fe.game_info(Info.Category)+" Gen"
+		sys_gen.msg = fe.game_info(Info.Category)+" Gen"
 		if ( ttype == Transition.StartLayout)
-		   sys_gen.msg = fe.game_info(Info.Category)+" Gen"
+		sys_gen.msg = fe.game_info(Info.Category)+" Gen"
 		if ( ttype == Transition.ToNewList)
-		   sys_gen.msg = fe.game_info(Info.Category)+" Gen"
+		sys_gen.msg = fe.game_info(Info.Category)+" Gen"
 		if  (fe.game_info(Info.Category) == "")
-		   sys_gen.msg = "---"
+		sys_gen.msg = "---"
 	}
-
-fe.add_ticks_callback( "tick_sys_gen" );
 
 //Function to Display/ Hide Info
-fe.add_ticks_callback( "tick_sys_info" );
-
-function tick_sys_info(ttime)
+function pm_infopanel_start()
 	{
-		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_info.visible = true : sys_info.visible = false;
-		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_oview.visible = true : sys_oview.visible = false;
-		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_release.visible = true : sys_release.visible = false;
-		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_sumtotal.visible = true : sys_sumtotal.visible = false;
-		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_tech.visible = true : sys_tech.visible = false;
-		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? sys_gen.visible = true : sys_gen.visible = false;
+		sys_info.visible = true;
+		sys_oview.visible = true;
+		sys_release.visible = true;
+		sys_sumtotal.visible = true;
+		sys_tech.visible = true;
+		sys_gen.visible = true;
 	}
+
+function pm_infopanel_stop()
+	{
+		sys_info.visible = false;
+		sys_oview.visible = false;
+		sys_release.visible = false;
+		sys_sumtotal.visible = false;
+		sys_tech.visible = false;
+		sys_gen.visible = false;
+	}
+
+function pminfopanel_signals( signal )
+	{
+		if (signal == "custom4")
+			{
+				if (sys_info.visible) pm_infopanel_stop(); else pm_infopanel_start();
+				return true;
+			}
+
+		else if (signal == "back")
+			{
+				if (sys_info.visible) pm_infopanel_stop(); else return;
+				return true;
+			}
+		return false;
+	}
+
+fe.add_signal_handler("pminfopanel_signals");
+
+
+//#####CUSTOM OVERLAY - OPTIONS MENU#####
+
+//Custom Overlay: Options: Control Module: Surface & Order
+local g_surface = fe.add_surface(1920, 1080);
+g_surface.visible = false;  
+g_surface.zorder = 1
+
+//Custom Overlay: Options: Control Module: Background Image
+local game_info= g_surface.add_image ("images/options_menu_pm.png", 660, 0, 0, 0);
+
+//Custom Overlay: Options: Control Module: Manager Class
+local manager = FeControls(
+	{
+		enabled = false,
+		selected = "label_random",                    
+		clear_selection = true,
+		key_up = "up",
+		key_down = "down",
+		key_left = "left",
+		key_right = "right",
+		key_select = "select"
+	}
+);
+
+
+//###Custom Overlay: Options: Control Module: Labels###
+
+//Custom Overlay: Options: Control Module: Random
+manager.add(FeLabel("label_random", 1084, 284, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_exit", down = "label_search", right = "label_search", left = "label_exit",
+		select = function()
+			{
+				::fe.signal("random_game");
+			}
+		state_default =
+			{
+				msg = "Random",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+//Custom Overlay: Options: Control Module: Search
+manager.add(FeLabel("label_search", 1084, 372, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_random", down = "label_screensaver", right = "label_screensaver", left = "label_random",
+		select = function()
+			{
+				::fe.signal("custom1");
+			}
+		state_default =
+			{
+				msg = "Search",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+//Custom Overlay: Options: Control Module: Screensaver
+manager.add(FeLabel("label_screensaver", 1084, 464, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_search", down = "label_reload", right = "label_reload", left = "label_search",
+		select = function()
+			{
+				::fe.signal("screen_saver");
+			}
+		state_default =
+			{
+				msg = "Screensaver",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+//Custom Overlay: Options: Control Module: Reload
+manager.add(FeLabel("label_reload", 1084, 552, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_screensaver", down = "label_configure", right = "label_configure", left = "label_screensaver",
+		select = function()
+			{
+				::fe.signal("reload");
+			}
+		state_default =
+			{
+				msg = "Reload",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+//Custom Overlay: Options: Control Module: Configure
+manager.add(FeLabel("label_configure", 1084, 640, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_reload", down = "label_exit", right = "label_exit", left = "label_reload",
+		select = function()
+			{
+				::fe.signal("configure");
+			}
+		state_default =
+			{
+				msg = "Configure",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+//Custom Overlay: Options: Control Module: Exit
+manager.add(FeLabel("label_exit", 1084, 728, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_configure", down = "label_random", right = "label_random", left = "label_configure",
+		select = function()
+			{
+				::fe.signal("exit");
+			}
+		state_default =
+			{
+				msg = "Exit Attract-Mode",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+ 
+//Custom Overlay: Game Info & Options Menu: Control Module: Signal Handlers
+function start_menu()
+	{
+		g_surface.visible = true;
+		manager.enabled = true;
+	}
+
+function stop_menu()
+	{
+		g_surface.visible = false;
+		manager.enabled = false;
+	}
+
+function cmenu_start()
+	{
+		manager.enabled = true;
+	}
+
+function cmenu_stop()
+	{
+		manager.enabled = false;
+	}
+
+function g_surface_show()
+	{
+		g_surface.visible = true;
+	}
+
+function g_surface_hide()
+	{
+		g_surface.visible = false;
+	}
+
+function control_signals( signal )
+	{
+		if (signal == "custom2")
+			{
+				if (g_surface.visible) stop_menu(); else start_menu();
+				return true;
+			}	
+		else if ( signal == "back" )
+			{
+				if (manager.enabled) stop_menu(); 
+				else if (g_surface.visible) g_surface_hide(); else return
+				return true;
+			}
+		return false;
+	}
+
+fe.add_signal_handler("control_signals");
+
+//Game: info Panel: Control Module: Iniitialize Controls Manager
+manager.init();
+
+//Keyboard Search Module & Settings
+local search_surface = fe.add_surface(1260, 1080)
+search_surface.zorder = 2;
+search_surface.set_pos(660, 0);
+KeyboardSearch(search_surface)
+	.bg ( "images/search_bg.png" )
+	.bg_color( 255, 255, 255, 255 )
+	.text_pos ([0.35, 0.1, 2, 0.1])
+	.text_color( 250, 250, 250)
+	.text_font( "BebasNeue Book.ttf" )
+	.keys_image_folder( "images/search_keys" )
+	.keys_pos ([0.1, 0.35, 0.8, 0.6])
+	.keys_color( 100, 100, 100 )
+	.keys_selected_color( 220, 220, 220 )
+	.init()
 
 //Temporary Fix for Screen Flickering in FullScreen Mode
 fe.add_ticks_callback( "tick_pixel" );

@@ -16,6 +16,7 @@ local background = fe.add_image("images/retromode_bg.png", 0,0,0,0);
 background.mipmap = true;
 
 //Load Modules & Plug-ins
+fe.do_nut("scripts/objects/controls/module.nut") //load controls module
 fe.do_nut("scripts/leap/plugin.nut") //load leap plugin
 fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
 
@@ -23,7 +24,7 @@ fe.do_nut("scripts/shuffle/module.nut") //load shuffle module
 //#####SYSTEMS: FLYERS, LOGOS & TITLE#####
 
 //System Flyers
-local sysflyers = fe.add_image("images/sysflyer/[Name].png", 0, 0, 0, 0);
+local sysflyers = fe.add_image("images/sysflyer/[Name].png", 660, 0, 0, 0);
 sysflyers.mipmap = true;
 sysflyers.trigger = Transition.EndNavigation;
 
@@ -33,6 +34,7 @@ listbg.mipmap = true;
 //System Logo
 local syslogo = fe.add_image("images/syslogo/[Name].png", 490, 440, 0, 0);
 syslogo.mipmap = true;
+syslogo.zorder = 2;
 syslogo.trigger = Transition.EndNavigation;
 
 //Platforms Title
@@ -44,10 +46,6 @@ listseperator.mipmap = true;
 
 local listseperator = fe.add_image("images/seperator_down.png", 50, 650, 560, 0);
 listseperator.mipmap = true;
-
-//Info Button
-local info_button = fe.add_image ("images/info_button.png", 1260,0,0,0);
-info_button.mipmap = true;
 
 //Blinking Arrows 
 local image_up = fe.add_image ("images/arrow_up.png", 17.8, 396, 0, 0);
@@ -209,16 +207,14 @@ fe.add_transition_callback("on_plat_oviewtransition")
 function on_plat_oviewtransition(ttype, var, ttime)
 	{
 		if ( ttype == Transition.EndNavigation)
-		   plat_oview.msg = fe.game_info(Info.Overview)
+		plat_oview.msg = fe.game_info(Info.Overview)
 		if ( ttype == Transition.StartLayout)
-		   plat_oview.msg = fe.game_info(Info.Overview)
+		plat_oview.msg = fe.game_info(Info.Overview)
 		if ( ttype == Transition.ToNewList)
-		   plat_oview.msg = fe.game_info(Info.Overview)
+		plat_oview.msg = fe.game_info(Info.Overview)
 		if  (fe.game_info(Info.Overview) == "")
-		   plat_oview.msg = "Overview not avavilable."
+		plat_oview.msg = "Overview not avavilable."
 	}
-
-fe.add_ticks_callback( "tick_plat_oview" );
 
 //Platform: Number of Systems
 local plat_sumtotal = fe.add_text("[plat_sumtotal]", 1200, 86, 250, 100);
@@ -235,26 +231,47 @@ fe.add_transition_callback("on_plat_sumtotaltransition")
 function on_plat_sumtotaltransition(ttype, var, ttime)
 	{
 		if ( ttype == Transition.EndNavigation)
-		   plat_sumtotal.msg = "0"+" Items in List"
+		plat_sumtotal.msg = "0"+" Items in List"
 		if ( ttype == Transition.StartLayout)
-		   plat_sumtotal.msg = "0"+" Items in List"
+		plat_sumtotal.msg = "0"+" Items in List"
 		if ( ttype == Transition.ToNewList)
-		   plat_sumtotal.msg = "0"+" Items in List"
+		plat_sumtotal.msg = "0"+" Items in List"
 		if  (fe.game_info(Info.Year) == "")
-		   plat_sumtotal.msg = "0"+" Items in List"
+		plat_sumtotal.msg = "0"+" Items in List"
 	}
-
-fe.add_ticks_callback( "tick_plat_sumtotal" );
 
 //Function to Display/ Hide Info
-function tick_plat_info(ttime)
+function dm_infopanel_start()
 	{
-		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? plat_info.visible = true : plat_info.visible = false;
-		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? plat_oview.visible = true : plat_oview.visible = false;
-		(fe.get_input_state("Joy0 Button2") || fe.get_input_state("X")) ? plat_sumtotal.visible = true : plat_sumtotal.visible = false;
+		plat_info.visible = true;
+		plat_oview.visible = true;
+		plat_sumtotal.visible = true;
 	}
 
-fe.add_ticks_callback( "tick_plat_info" );
+function dm_infopanel_stop()
+	{
+		plat_info.visible = false;
+		plat_oview.visible = false;
+		plat_sumtotal.visible = false;
+	}
+
+function dminfopanel_signals( signal )
+	{
+		if (signal == "custom4")
+			{
+				if (plat_info.visible) dm_infopanel_stop(); else dm_infopanel_start();
+				return true;
+			}
+
+		else if (signal == "back")
+			{
+				if (plat_info.visible) dm_infopanel_stop(); else return;
+				return true;
+			}
+		return false;
+	}
+
+fe.add_signal_handler("dminfopanel_signals");
 
 //Ignore Button Presses
 function on_signal( sig )
@@ -288,6 +305,177 @@ function on_signal( sig )
 	return false;
 }
 fe.add_signal_handler(this, "on_signal");
+
+
+//#####CUSTOM OVERLAY - OPTIONS MENU#####
+
+//Custom Overlay: Options: Control Module: Surface & Order
+local g_surface = fe.add_surface(1920, 1080);
+g_surface.visible = false;  
+g_surface.zorder = 1
+
+//Custom Overlay: Options: Control Module: Background Image
+local game_info= g_surface.add_image ("images/options_menu_dm.png", 660, 0, 0, 0);
+
+//Custom Overlay: Options: Control Module: Manager Class
+local manager = FeControls(
+	{
+		enabled = false,
+		selected = "label_screensaver",                    
+		clear_selection = true,
+		key_up = "up",
+		key_down = "down",
+		key_left = "left",
+		key_right = "right",
+		key_select = "select"
+	}
+);
+
+
+//###Custom Overlay: Options: Control Module: Labels###
+
+//Custom Overlay: Options: Control Module: Screensaver
+manager.add(FeLabel("label_screensaver", 1084, 376, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_exit", down = "label_reload", right = "label_reload", left = "label_exit",
+		select = function()
+			{
+				::fe.signal("screen_saver");
+			}
+		state_default =
+			{
+				msg = "Screensaver",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+//Custom Overlay: Options: Control Module: Reload
+manager.add(FeLabel("label_reload", 1084, 464, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_screensaver", down = "label_configure", right = "label_configure", left = "label_screensaver",
+		select = function()
+			{
+				::fe.signal("reload");
+			}
+		state_default =
+			{
+				msg = "Reload",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+//Custom Overlay: Options: Control Module: Configure
+manager.add(FeLabel("label_configure", 1084, 552, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_reload", down = "label_exit", right = "label_exit", left = "label_reload",
+		select = function()
+			{
+				::fe.signal("configure");
+			}
+		state_default =
+			{
+				msg = "Configure",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+//Custom Overlay: Options: Control Module: Exit
+manager.add(FeLabel("label_exit", 1084, 640, 500, 60,
+	{
+		surface = g_surface,
+		up = "label_configure", down = "label_screensaver", right = "label_screensaver", left = "label_configure",
+		select = function()
+			{
+				::fe.signal("exit");
+			}
+		state_default =
+			{
+				msg = "Exit Attract-Mode",
+				charsize = 32,
+				rgb = [255, 255, 255],
+			}
+		state_selected = 
+			{
+				rgb = [255, 255, 255],
+			}
+	}
+));
+
+ 
+//Custom Overlay: Game Info & Options Menu: Control Module: Signal Handlers
+function start_menu()
+	{
+		g_surface.visible = true;
+		manager.enabled = true;
+	}
+
+function stop_menu()
+	{
+		g_surface.visible = false;
+		manager.enabled = false;
+	}
+
+function cmenu_start()
+	{
+		manager.enabled = true;
+	}
+
+function cmenu_stop()
+	{
+		manager.enabled = false;
+	}
+
+function g_surface_show()
+	{
+		g_surface.visible = true;
+	}
+
+function g_surface_hide()
+	{
+		g_surface.visible = false;
+	}
+
+function control_signals( signal )
+	{
+		if (signal == "custom2")
+			{
+				if (g_surface.visible) stop_menu(); else start_menu();
+				return true;
+			}	
+		else if ( signal == "back" )
+			{
+				if (manager.enabled) stop_menu(); 
+				else if (g_surface.visible) g_surface_hide(); else return
+				return true;
+			}
+		return false;
+	}
+
+fe.add_signal_handler("control_signals");
+
+//Game: info Panel: Control Module: Iniitialize Controls Manager
+manager.init();
 
 
 //#####Custom Overlay Menu#####
@@ -325,46 +513,47 @@ overlay_menutitle.charsize = 80;
 overlay_menutitle.align = Align.MiddleCentre;
 overlay_menutitle.style = Style.Bold;
 
-// tell Attractmode we are using a custom overlay menu
+//Tell Attractmode we are using a custom overlay menu
 fe.overlay.set_custom_controls( overlay_menutitle, overlay_listbox );
 
-//  The following function shows or hides the display menu properly
+//The following function shows or hides the display menu properly
 
 fe.add_transition_callback( "coverlay_transition" );
 function coverlay_transition( ttype, var, ttime )
 	{
 		switch ( ttype )
-		{
-			case Transition.ShowOverlay:
-			overlay_surface.visible = true;
-			if ( ttime < 255 )
-				{
-					overlay_surface.alpha = ttime;
-					return true;
-				}
-			else
-				{
-					overlay_surface.alpha = 255;
-				}
-			break;
-			case Transition.HideOverlay:
-			if ( ttime < 255 )
-				{
-					overlay_surface.alpha = 255 - ttime;
-					return true;
-				}
-			else
-				{
-					local old_alpha;
-					old_alpha = overlay_surface.alpha;
-					overlay_surface.alpha = 0;
+			{
+				case Transition.ShowOverlay:
+				overlay_surface.visible = true;
+				if ( ttime < 255 )
+					{
+						overlay_surface.alpha = ttime;
+						return true;
+					}
+				else
+					{
+						overlay_surface.alpha = 255;
+					}
+				break;
 
-			if ( old_alpha != 0 )
-				return true;
-				}
-			overlay_surface.visible = false;
-			break;
-		}
+				case Transition.HideOverlay:
+				if ( ttime < 255 )
+					{
+						overlay_surface.alpha = 255 - ttime;
+						return true;
+					}
+				else
+					{
+						local old_alpha;
+						old_alpha = overlay_surface.alpha;
+						overlay_surface.alpha = 0;
+
+						if ( old_alpha != 0 )
+						return true;
+					}
+				overlay_surface.visible = false;
+				break;
+			}
 		return false;
 	}
 

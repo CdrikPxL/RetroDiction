@@ -68,7 +68,6 @@ local settings =
 	}
 
 local video = fe.add_artwork("video", 680,705,472,355)
-video.video_flags = Vid.NoLoop;
 video.preserve_aspect_ratio = true;
 video.mipmap = true;
 video.trigger = Transition.EndNavigation;
@@ -93,10 +92,11 @@ fe.add_transition_callback(this, "vid_on_transition")
 
 
 //Snap is Hidden when Video is Playing. That is to ensure that if Snap size is bigger it does not show behind the video
-function snap_on_tick(tick_time) {
-  if ( video.visible == true ) snap.visible = false
-  else if ( video.visible == false ) snap.visible = true
- }
+function snap_on_tick(tick_time)
+	{
+		if ( video.visible == true ) snap.visible = false
+		else if ( video.visible == false ) snap.visible = true
+	}
 
 fe.add_ticks_callback(this, "snap_on_tick")
 
@@ -104,6 +104,7 @@ fe.add_ticks_callback(this, "snap_on_tick")
 local syslogo = fe.add_image("images/syslogo/[Emulator].png", 550, 646, 200,100.625);
 syslogo.mipmap = true;
 syslogo.trigger = Transition.EndNavigation;
+syslogo.zorder = 4;
 
 //Game: Category Icon
 local caticon = fe.add_image ("images/categories/[Category].png", 1497, 304, 100, 100);
@@ -224,13 +225,13 @@ fe.add_transition_callback("on_goverviewtransition")
 function on_goverviewtransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-       goverview.msg = fe.game_info(Info.Overview)
+		goverview.msg = fe.game_info(Info.Overview)
 		if (ttype == Transition.StartLayout)
-       goverview.msg = fe.game_info(Info.Overview)
+		goverview.msg = fe.game_info(Info.Overview)
 		if (ttype == Transition.ToNewList)
-       goverview.msg = fe.game_info(Info.Overview)
+		goverview.msg = fe.game_info(Info.Overview)
 		if (fe.game_info(Info.Overview) == "")
-	     goverview.msg = "Overview not avavilable."
+		goverview.msg = "Overview not avavilable."
 	}
 
 //Game: Release Year
@@ -246,13 +247,13 @@ fe.add_transition_callback("on_greleasetransition")
 function on_greleasetransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-			 grelease.msg = fe.game_info(Info.Year)
+		grelease.msg = fe.game_info(Info.Year)
 		if (ttype == Transition.StartLayout)
-			 grelease.msg = fe.game_info(Info.Year)
+		grelease.msg = fe.game_info(Info.Year)
 		if (ttype == Transition.ToNewList)
-			 grelease.msg = fe.game_info(Info.Year)
+		grelease.msg = fe.game_info(Info.Year)
 		if (fe.game_info(Info.Year) == "")
-			 grelease.msg = "?"
+		grelease.msg = "---"
 	}
 
 //Game: Number of Players
@@ -268,13 +269,13 @@ fe.add_transition_callback("on_gplayertransition")
 function on_gplayertransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-			 gplayer.msg = fe.game_info(Info.Players)
+		gplayer.msg = fe.game_info(Info.Players)
 		if (ttype == Transition.StartLayout)
-			 gplayer.msg = fe.game_info(Info.Players)
+		gplayer.msg = fe.game_info(Info.Players)
 		if (ttype == Transition.ToNewList)
-			 gplayer.msg = fe.game_info(Info.Players)
+		gplayer.msg = fe.game_info(Info.Players)
 		if (fe.game_info(Info.Players) == "")
-			 gplayer.msg = "?"
+		gplayer.msg = "---"
 	}
 
 //Game: Region
@@ -290,13 +291,13 @@ fe.add_transition_callback("on_gregiontransition")
 function on_gregiontransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-			 gregion.msg = fe.game_info(Info.Region)
+		gregion.msg = fe.game_info(Info.Region)
 		if (ttype == Transition.StartLayout)
-			 gregion.msg = fe.game_info(Info.Region)
+		gregion.msg = fe.game_info(Info.Region)
 		if (ttype == Transition.ToNewList)
-			 gregion.msg = fe.game_info(Info.Region)
+		gregion.msg = fe.game_info(Info.Region)
 		if (fe.game_info(Info.Region) == "")
-			 gregion.msg = "Unknown"
+		gregion.msg = "---"
 	}
 
 //Game: Language
@@ -312,13 +313,13 @@ fe.add_transition_callback("on_glantransition")
 function on_glantransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-       glan.msg = fe.game_info(Info.Language)
+		glan.msg = fe.game_info(Info.Language)
 		if (ttype == Transition.StartLayout)
-       glan.msg = fe.game_info(Info.Language)
+		glan.msg = fe.game_info(Info.Language)
 		if (ttype == Transition.ToNewList)
-       glan.msg = fe.game_info(Info.Language)
+		glan.msg = fe.game_info(Info.Language)
 		if (fe.game_info(Info.Language) == "")
-			glan.msg = "Unknown"
+		glan.msg = "---"
 	}
 
 //Game: Category/ Genre
@@ -334,13 +335,13 @@ fe.add_transition_callback("on_gcattransition")
 function on_gcattransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-       gcat.msg = fe.game_info(Info.Category)
+		gcat.msg = fe.game_info(Info.Category)
 		if (ttype == Transition.StartLayout)
-       gcat.msg = fe.game_info(Info.Category)
+		gcat.msg = fe.game_info(Info.Category)
 		if (ttype == Transition.ToNewList)
-       gcat.msg = fe.game_info(Info.Category)
+		gcat.msg = fe.game_info(Info.Category)
 		if (fe.game_info(Info.Category) == "")
-	     gcat.msg = "Unknown"
+		gcat.msg = "---"
 	}
 
 //Game: Series
@@ -356,13 +357,13 @@ fe.add_transition_callback("on_gseriestransition")
 function on_gseriestransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-       gseries.msg = fe.game_info(Info.Series)
+		gseries.msg = fe.game_info(Info.Series)
 		if (ttype == Transition.StartLayout)
-       gseries.msg = fe.game_info(Info.Series)
+		gseries.msg = fe.game_info(Info.Series)
 		if (ttype == Transition.ToNewList)
-       gseries.msg = fe.game_info(Info.Series)
+		gseries.msg = fe.game_info(Info.Series)
 		if (fe.game_info(Info.Series) == "")
-	     gseries.msg = "---"
+		gseries.msg = "---"
 	}
 
 //Game: Status
@@ -393,13 +394,13 @@ fe.add_transition_callback("on_gproducetransition")
 function on_gproducetransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-       gproduce.msg = fe.game_info(Info.Manufacturer)
+		gproduce.msg = fe.game_info(Info.Manufacturer)
 		if (ttype == Transition.StartLayout)
-       gproduce.msg = fe.game_info(Info.Manufacturer)
+		gproduce.msg = fe.game_info(Info.Manufacturer)
 		if (ttype == Transition.ToNewList)
-       gproduce.msg = fe.game_info(Info.Manufacturer)
+		gproduce.msg = fe.game_info(Info.Manufacturer)
 		if (fe.game_info(Info.Manufacturer) == "")
-	     gproduce.msg = "Unknown"
+		gproduce.msg = "---"
 	}
 
 //GameList: List Entry/List Size
@@ -531,17 +532,17 @@ fe.add_transition_callback("on_gtitletransition")
 function on_gtitletransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-			 gtitle.msg = fe.game_info(Info.Title)
+		gtitle.msg = fe.game_info(Info.Title)
 		if (ttype == Transition.StartLayout)
-       gtitle.msg = fe.game_info(Info.Title)
+		gtitle.msg = fe.game_info(Info.Title)
 		if (ttype == Transition.ToNewList)
-       gtitle.msg = fe.game_info(Info.Title)
+		gtitle.msg = fe.game_info(Info.Title)
 		if (fe.game_info(Info.Title) == "")
-	     gtitle.msg = "---"
+		gtitle.msg = "---"
 	}
 
 //Custom Overlay: Game Info: Play Time
-// FormatTime is oriinalluy created by Keil Miller, some modifications were made by Oomek in my request.
+//FormatTime is originally created by Keil Miller, some modifications were made by Oomek at my request.
 function PlayTimeFormatted()
 	{
 		local totalSeconds = 0;
@@ -557,11 +558,11 @@ function PlayTimeFormatted()
 
 		local string = "";
 
-			if (play_time.days > 0) string +=" Days: " + play_time.days;
-			if (play_time.hours > 0) string +=" Hours: " + play_time.hours;
-			if (play_time.minutes > 0) string +=" Minutes: " + play_time.minutes;
-			if (play_time.seconds > 0) string +=" Seconds: " + play_time.seconds;
-			if (string == "") return "---"
+			if (play_time.days > 0) string +=play_time.days + " Day  ";
+			if (play_time.hours > 0) string +=format("%02d", play_time.hours) + ":";
+			if (play_time.minutes > 0) string +=format("%02d", play_time.minutes) + ":";
+			if (play_time.seconds > 0) string +=format("%02d", play_time.seconds);
+			if (string == "") return "00:00"
 			else return lstrip(string);
 	}
 
@@ -583,25 +584,23 @@ function playtime_transition(ttype, var, ttime)
 fe.add_transition_callback("playtime_transition")
 
 //Custom Overlay: Game Info: Play Count
-local gcount = g_surface.add_text("[gmcount]", 120, 343, 290, 0);
-gmcount.font="BebasNeue Book.ttf";
-gmcount.align = Align.MiddleCentre;
-gmcount.word_wrap = true;
-gmcount.charsize = 32;
-gmcount.style = Style.Bold;
-gmcount.set_rgb(220,220,220);
+local gpcount = g_surface.add_text("[gpcount]", 120, 343, 290, 0);
+gpcount.font="BebasNeue Book.ttf";
+gpcount.align = Align.MiddleCentre;
+gpcount.word_wrap = true;
+gpcount.charsize = 32;
+gpcount.style = Style.Bold;
+gpcount.set_rgb(220,220,220);
 
-fe.add_transition_callback("on_gmcountttransition")
-function on_gmcounttransition(ttype, var, ttime)
+fe.add_transition_callback("on_gpcounttransition")
+function on_gpcounttransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-			 gmcount.msg = fe.game_info(Info.PlayedCount)+ " Times"
+		gpcount.msg = fe.game_info(Info.PlayedCount)
 		if (ttype == Transition.StartLayout)
-       gmcount.msg = fe.game_info(Info.PlayedCount)+ " Times"
+		gpcount.msg = fe.game_info(Info.PlayedCount)
 		if (ttype == Transition.ToNewList)
-       gmcount.msg = fe.game_info(Info.PlayedCount)+ " Times"
-		if (fe.game_info(Info.PlayedCount) == "")
-	     gmcount.msg = "---"
+		gpcount.msg = fe.game_info(Info.PlayedCount)
 	}
 
 //Custom Overlay: Game Info: Database
@@ -617,13 +616,13 @@ fe.add_transition_callback("on_gdbasetransition")
 function on_gdbasetransition(ttype, var, ttime)
 	{
 		if (ttype == Transition.EndNavigation)
-       gdbase.msg = fe.game_info(Info.Extra)
+		gdbase.msg = fe.game_info(Info.Extra)
 		if (ttype == Transition.StartLayout)
-       gdbase.msg = fe.game_info(Info.Extra)
+		gdbase.msg = fe.game_info(Info.Extra)
 		if (ttype == Transition.ToNewList)
-       gdbase.msg = fe.game_info(Info.Extra)
+		gdbase.msg = fe.game_info(Info.Extra)
 		if (fe.game_info(Info.Control) == "")
-	     gdbase.msg = "---"
+		gdbase.msg = "---"
 	}
 
 //Custom Overlay: Game Info: Media Format
@@ -643,13 +642,13 @@ fe.add_transition_callback("on_gmcounttransition")
 function on_gmcounttransition(ttype, var, ttime)
 	{
 		if(ttype == Transition.EndNavigation)
-		  gmcount.msg = fe.game_info(Info.DisplayCount)
+		gmcount.msg = fe.game_info(Info.DisplayCount)
 		if(ttype == Transition.StartLayout)
-		  gmcount.msg = fe.game_info(Info.DisplayCount)
+		gmcount.msg = fe.game_info(Info.DisplayCount)
 		if(ttype == Transition.ToNewList)
-		  gmcount.msg = fe.game_info(Info.DisplayCount)
+		gmcount.msg = fe.game_info(Info.DisplayCount)
 		if(fe.game_info(Info.DisplayCount) == "")
-		  gmcount.msg =  "---"
+		gmcount.msg =  "---"
 	}
 
 
@@ -808,7 +807,7 @@ g_surface2.visible = false;
 g_surface2.zorder = 2
 
 //Custom Overlay: Options: Control Module: Background Image
-local game_info= g_surface2.add_image ("images/option_menu.png", 670, 10, 796, 679);
+local game_info= g_surface2.add_image ("images/options_menu_sm.png", 670, 10, 796, 679);
 
 //Custom Overlay: Options: Control Module: Manager Class
 local manager2 = FeControls2(
@@ -823,6 +822,7 @@ local manager2 = FeControls2(
 		key_select = "select"
 	}
 );
+
 
 //###Custom Overlay: Options: Control Module: Labels###
 
@@ -1063,7 +1063,7 @@ function control_signals( signal )
 			}
 		else if (signal == "custom2")
 			{
-				if (g_surface2.visible) stop_menu2; else start_menu2();
+				if (g_surface2.visible) stop_menu2(); else start_menu2();
 				return true;
 			}	
 		return false;
