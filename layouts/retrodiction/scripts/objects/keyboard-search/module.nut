@@ -25,7 +25,7 @@ class KeyboardSearch {
         retain = false,
         key_delay = 100,
         repeat_key_delay = 250,
-        bg = :: "/images/pixel.png",
+        bg = "/images/pixel.png",
         bg_red = 30,
         bg_green = 30,
         bg_blue = 30,
