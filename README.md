@@ -856,8 +856,7 @@ Picture: https://imgur.com/gallery/ClrNy6M
 All icons are from Game-icons.net, excepetions are listed seperately.
   
 ##### Category/ Genre Icons  
-  
-  
+-  
 <details>
   <summary>Expand Category/ Genre Icon Credits</summary>
 
@@ -918,8 +917,7 @@ Link: https://game-icons.net/1x1/lorc/sprint.html
 
 
 ##### Custom Option Menu Icons  
-  
-  
+-  
 <details>
   <summary>Expand Custom Option Menu Icons Credits</summary>
  
@@ -944,8 +942,7 @@ Link: https://game-icons.net/1x1/lord-berandas/power-button.html
 
 
 ##### Display/ Platform/ System Info Panels Icons  
-  
-  
+-  
 <details>
   <summary>Expand Display/ Platform/ System Info Panels Icons Credits</summary>
  
@@ -970,8 +967,7 @@ Link: https://game-icons.net/1x1/lorc/open-book.html
 
 <details>
   <summary>Expand Game Launcher Icons Credits</summary>
-  
-  
+-  
 Played Time: Alarm clock icon by Delapouite under CC BY 3.0
 Link: https://game-icons.net/1x1/delapouite/alarm-clock.html
 
@@ -990,8 +986,7 @@ Link: https://game-icons.net/1x1/delapouite/compact-disc.html
 
 <details>
   <summary>Expand Rom Info Panel Icons Credits</summary>
-  
-  
+-  
 Year: Calendar icon by Delapouite under CC BY 3.0
 Link: https://game-icons.net/1x1/delapouite/calendar.html
 
