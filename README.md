@@ -854,11 +854,11 @@ Picture: https://imgur.com/gallery/ClrNy6M
 
 #### Icons (Genre & Misc)
 All icons are from Game-icons.net, excepetions are listed seperately.
-
-##### Category/ Genre Icons
+  
+##### Category/ Genre Icons  
 
 <details>
-  <summary>Expand Category/ Genre Icon Credits</summary>.
+  <summary>Expand Category/ Genre Icon Credits</summary>
 
 Action: Sprint icon by Lorc under CC BY 3.0  
 Link: https://game-icons.net/1x1/lorc/sprint.html
@@ -913,4 +913,101 @@ Link: https://game-icons.net/1x1/delapouite/soccer-ball.html
 
 Strategy: Chess rook icon by Skoll under CC BY 3.0  
 Link: https://game-icons.net/1x1/lorc/sprint.html
+</details>
+
+
+##### Custom Option Menu Icons  
+
+<details>
+  <summary>Expand Custom Option Menu Icons Credits</summary>
+ 
+Random: Rolling dice icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/rolling-dices.html  
+
+Search: Magnifying glass icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/magnifying-glass.html  
+
+Screensaver: Moon icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/moon.html  
+
+Reload: Clockwise rotation icon by Delapouite under CC BY 3.0 (inverted)  
+Link: https://game-icons.net/1x1/delapouite/clockwise-rotation.html  
+
+Configure: Auto repair icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/auto-repair.html  
+
+Shutdown: Power button icon by Lord Berandas under CC BY 3.0  
+Link: https://game-icons.net/1x1/lord-berandas/power-button.html  
+</details>
+
+
+##### Display/ Platform/ System Info Panels Icons  
+
+<details>
+  <summary>Expand Display/ Platform/ System Info Panels Icons Credits</summary>
+ 
+Year: Calendar icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/calendar.html  
+
+Number of Items: Paper tray icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/paper-tray.html  
+
+System Tech: Processor icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/processor.html  
+
+System Generation: Microchip icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/microchip.html  
+
+Overview: Open book icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/open-book.html  
+</details>
+
+
+##### Game Launcher Icons  
+
+<details>
+  <summary>Expand Game Launcher Icons Credits</summary>
+
+Played Time: Alarm clock icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/alarm-clock.html  
+
+Played Count: Coins icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/coins.html  
+
+Database: Database icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/database.html  
+
+Media Format: Compact Disc icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/compact-disc.html  
+</details>
+
+
+##### Rom Info Panel Icons  
+
+<details>
+  <summary>Expand Rom Info Panel Icons Credits</summary>
+
+Year: Calendar icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/calendar.html  
+
+Players: Backup icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/backup.html  
+
+Region: Position marker icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/position-marker.html  
+
+Language: Conversation icon by Lorc under CC BY 3.0  
+Link: https://game-icons.net/1x1/lorc/conversation.html  
+
+Category (Missing): Perspective dice 6 faces random icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/perspective-dice-six-faces-random.html  
+
+Series: Book pile icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/book-pile.html  
+
+Controls: Joystick icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/joystick.html  
+
+Manufacturer: Factory icon by Delapouite under CC BY 3.0  
+Link: https://game-icons.net/1x1/delapouite/factory.html  
 </details>
