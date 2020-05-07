@@ -87,7 +87,7 @@ Youtube videos showcasing soem aspects of layout. There will be small difference
 3. Copy attract.cfg and attract.am from /extras to Attract-Mode folder root. This will setup all displays and controls.  
 
 ### Experienced/ New AM Users - Font File
-4. The current attract.cfg provided in /extras has two settings which are Windows specific, "font" and "font_path". Please edit these if you are on Linux or Mac (please refer to point 5).  
+4. The current attract.cfg provided in /extras has two settings which are Windows specific, "font" and "font_path". Please edit these if you are on Linux or Mac (refer to point 5).  
 5. There is a font file canela_roman in /extras. I found it better then default Ariel, if you want to use it place the file canela_roman.otf to AM root. Now edit attract.cfg, under "general" change font to canela_roman and font_path to /  
 
 **Note: Some controls are xbox 360 controller based and may require mapping to keyboard or any other device in use**  
