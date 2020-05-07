@@ -1020,4 +1020,4 @@ Link: https://game-icons.net/1x1/delapouite/factory.html
 ### Other Credits
 
 #### TinyPNG
-Much thanks to TingPNG! it is an online service which reduces the size of png files. I used it on every imgae file which was not using transparency effects (almost 99%) it not only reduced the total size of layout considerably (1.2 Gb to 320 Mb) it also has a noticeable effect on rendering speed of said images while in AM.  
+Much thanks to TingPNG! it is an online service which reduces the size of png files. I used it on every imgae file which was not using transparency effects (almost 99%) it not only reduced the total size of layout considerably (1.2 Gb to 320 Mb) it also has a noticeable effect on rendering speed of said images in AM.  
