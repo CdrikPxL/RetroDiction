@@ -74,7 +74,7 @@ Youtube videos showcasing soem aspects of layout. There will be small difference
 1. Download and extract the latest version of Attract-Mode from this thread (first Porst): http://forum.attractmode.org/index.php?topic=2324.0
 2. Download this layout, unzip it and place in Attract-Mode folder, overwriting as needed. Overwriting is safe in most cases but take a look at contents just in case.
 
-**Note: The current size of download will be around 320 MB after reducing png through TinyPNG**  
+**Note: The current size of download will be around 320 MB**  
 
 ### Experienced Attract-Mode User
 3. Link the displays to appropriate layout nut file.  
@@ -1015,3 +1015,9 @@ Link: https://game-icons.net/1x1/delapouite/joystick.html
 Manufacturer: Factory icon by Delapouite under CC BY 3.0  
 Link: https://game-icons.net/1x1/delapouite/factory.html  
 </details>
+
+
+### Other Credits
+
+#### TinyPNG
+Much thanks to TingPNG! it is an online service which reduces the size of png files. I used it on every imgae file which was not using transparency effects (almost 99%) it not only reduced the total size of layout considerably (1.2 Gb to 320 Mb) it also has a noticeable effect on rendering speed of said images while in AM.  
